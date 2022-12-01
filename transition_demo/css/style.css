@@ -3,6 +3,7 @@ body {
 }
 
 .box {
+    border-radius: 50%;
     width: 100px;
     height: 100px;
     margin-left: auto;
@@ -46,23 +47,23 @@ body {
 @keyframes square-to-circle {
     0% {
         border-radius: 50%;
-        background-color: red;
+        background-color: yellow;
     }
     25% {
         border-radius: 40%;
-        background-color: yellow;
+        background-color: orange;
     }
     50% {
         border-radius: 30%;
-        background-color: green;
+        background-color: red;
     }
     75% {
         border-radius: 40%;
-        background-color: chocolate;
+        background-color: orange;
     }
     100% {
         border-radius: 50%;
-        background-color: red;
+        background-color: yellow;
     }
 }
 
