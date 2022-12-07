@@ -1,27 +1,49 @@
 // detecting key movement based on source from https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
+// open modal code from https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp
 const ball = document.querySelector('#ball');
-leftPos = -500;
-topPos = 0;
-move = 5;
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+
+leftPos = 1;
+topPos = 60;
+move = 1;
 document.onkeydown = checkKey;
 
 function checkKey(e) {
 
     e = e || window.event;
 
-    if (e.keyCode == '38' && topPos > 0) {
+    if (e.keyCode == '38' && topPos > 20) {
         // up arrow
         topPos -= move;
-    } else if (e.keyCode == '40' && topPos < 400) {
+    } else if (e.keyCode == '40' && topPos < 100) {
         // down arrow
         topPos += move;
-    } else if (e.keyCode == '37' && leftPos > -500) {
+    } else if (e.keyCode == '37' && leftPos > 0) {
         // left arrow
         leftPos -= move;
-    } else if (e.keyCode == '39') {
+    } else if (e.keyCode == '39' && leftPos < 95) {
         // right arrow
         leftPos += move;
     }
-    ball.style.left = `${leftPos}px`;
-    ball.style.top = `${topPos}px`;
+    ball.style.left = `${leftPos}%`;
+    ball.style.top = `${topPos}%`;
+
+    if ((topPos > 55 && topPos < 65) && (leftPos > 90)) {
+        modal.style.display = "block";
+        leftPos = 1;
+        topPos = 60;
+        ball.style.left = `${leftPos}%`;
+        ball.style.top = `${topPos}%`;
+    }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
 }
