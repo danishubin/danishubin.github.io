@@ -1,5 +1,5 @@
 // detecting key movement based on source from https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
-// open modal code from https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp
+// open modal code from https://www.w3schools.com/howto/howto_css_modals.asp
 const ball = document.querySelector('#ball');
 
 // Get the modal
