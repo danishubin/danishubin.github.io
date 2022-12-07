@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.nav-item {
+    margin: 10px;
+    border-style: none solid none solid;
+    border-color: #444444;
+    height: 100%;
+}
+
+.nav-item:hover {
+    background-color: #444444;
+}
+
+.row {
+    margin: 20px;
+}
+
+#ball {
+    position: relative;
+    left: -500px;
+}
