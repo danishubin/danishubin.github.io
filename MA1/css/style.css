@@ -2,6 +2,20 @@
         text-align: center;
     }
     
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    h1,
+    h4 {
+        font-weight: bold;
+    }
+    
     .navbar {
         z-index: 2;
     }
@@ -17,8 +31,9 @@
         background-color: #444444;
     }
     
-    .carousel {
-        margin: auto;
+    .carousel,
+    .row {
+        margin: 20px 0px;
     }
     
     .carousel-inner,
@@ -27,14 +42,50 @@
     .carousel-item .row div,
     .carousel-item .row div img {
         margin: auto;
+        text-align: center;
     }
     
-    .carousel-item {
-        width: 100vw;
+    button a {
+        color: inherit;
+        text-decoration: inherit;
     }
     
-    .row {
-        margin: 20px;
+    button a:hover {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    
+    .row div {
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .why-chess div img:hover {
+        animation: grow;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+    
+    @keyframes grow {
+        0% {
+            transform: scale(1) rotate(0deg);
+        }
+        25% {
+            transform: rotate(10deg);
+        }
+        50% {
+            transform: scale(1.2) rotate(0deg);
+        }
+        75% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: scale(1) rotate(0deg);
+        }
     }
     
     #soccerborder {
@@ -110,7 +161,6 @@
         background-color: #fefefe;
         margin: 15% auto;
         /* 15% from the top and centered */
-        padding: 20px;
         border: 1px solid #888;
         width: 80%;
         /* Could be more or less, depending on screen size */
@@ -139,7 +189,7 @@
     
     .tipbttn {
         border-radius: 25%;
-        background-color: #FAF87D;
+        background-color: #FCC03D;
     }
     
     .tiptext {
@@ -147,7 +197,7 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.5s linear;
-        background-color: #FAF87D;
+        background-color: #FCC03D;
         width: 300px;
     }
     
@@ -157,11 +207,30 @@
     }
     
     .tipdiv:hover .tipbttn {
-        background-color: #FAF87D;
+        background-color: #FCC03D;
     }
     
     .wrapper {
         display: inline-grid;
+    }
+    
+    .header {
+        /* Making header background gradient with: https://weekendprojects.dev/posts/creating-a-gradient-animation-with-css/ */
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
     
     @media (max-width: 800px) {
