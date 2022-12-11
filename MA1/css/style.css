@@ -239,6 +239,9 @@
         .modal {
             display: block;
         }
+        .modal-content {
+            margin-top: 200px;
+        }
         .close {
             display: none;
         }
