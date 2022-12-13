@@ -1,0 +1,13 @@
+body {
+    font-family: 'Comfortaa';
+    background-image: url("images/background.jpg");
+    opacity: 75%;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
