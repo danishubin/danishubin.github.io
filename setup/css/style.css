@@ -34,6 +34,7 @@ p:first-of-type{
     width: 320px;
     object-fit: fill;
     padding: 10px;
+    border: 5px solid grey;
 }
 
 .person_1 {opacity: 0; animation: fadeIn 3s linear forwards; animation-delay: 0s }
