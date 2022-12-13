@@ -11,3 +11,9 @@ body {
     object-fit: cover;
     padding: 10px;
 }
+
+.line {
+    height: 3px;
+    background-color: black;
+    margin: 10px;
+}
