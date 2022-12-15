@@ -230,7 +230,8 @@
         }
         .lamp,
         .light,
-        .bench {
+        .bench,
+        .gift {
             display: none;
         }
     }
