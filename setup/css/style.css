@@ -1,19 +1,49 @@
 body {
-    font-family: 'Comfortaa';
-    background-image: url("images/background.jpg");
-    opacity: 75%;
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    align-items: center;
+
+    background-image: url("../images/background-maybe.jpg");
+    background-size: cover;
+
+    height: 100vh;
+}
+.container{
+    text-align: center;
+    background-color: rgba(80, 80, 80, 0.6);
+    border-radius: 8px;
+}
+
+#heading {
+    color:white;
+}
+
+h4:first-of-type{
+    margin-top: 16px;
+    color: white;
+}
+
+p:first-of-type{
+    margin-top: 16px;
+    color: white;
 }
 
 .profile {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+    height: 320px;
+    width: 320px;
+    object-fit: fill;
     padding: 10px;
+    border: 5px solid grey;
 }
 
-.line {
-    height: 3px;
-    background-color: black;
-    margin: 10px;
+.person_1 {opacity: 0; animation: fadeIn 3s linear forwards; animation-delay: 0s }
+.person_2 {opacity: 0; animation: fadeIn 3s linear forwards; animation-delay: 1s }
+.person_3 {opacity: 0; animation: fadeIn 3s linear forwards; animation-delay: 2s }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    25% {opacity: .2; }
+    75% {opacity: .8; }
+    100% { opacity: 1; }
 }
