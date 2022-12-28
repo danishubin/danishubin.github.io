@@ -1,0 +1,306 @@
+/* 
+yellow: #e9bd2d
+orange: #e2631f
+gray: #bfc0c2
+ */
+
+body {
+    background-color: #bfc0c2;
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.interstateLight,
+p {
+    font-family: interstate-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.interstateBold,
+h4 {
+    font-family: interstate-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.interstateUltra {
+    font-family: interstate-condensed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: large;
+}
+
+.navbar {
+    background-color: #e9bd2d;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.nav-item {
+    padding: 20px;
+    border-radius: 25%;
+}
+
+button.navbar-toggler {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 17px;
+    position: relative;
+}
+
+.dropdown-menu,
+.dropdown-item:hover {
+    background-color: #e9bd2d;
+}
+
+.dropdown-item:active {
+    background-color: #e9bd2d;
+    color: black;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+
+/* Set a specific color for each brand */
+
+.fa-facebook,
+.fa-envelope {
+    color: black;
+}
+
+.fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #4f7165;
+}
+
+button a,
+button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.row {
+    width: 100vw;
+    margin: 0;
+    padding: 20px;
+}
+
+.btn:hover {
+    animation-name: btn-hover;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.updates div div {
+    background-color: #e2631f;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.updates li a {
+    color: white;
+    text-decoration: underline;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.class-info {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    height: 300px;
+}
+
+.class-info::-webkit-scrollbar {
+    display: none;
+}
+
+.info {
+    display: inline-block;
+    padding: 40px;
+    width: 700px;
+    height: 100%;
+    background-color: #e2631f;
+    white-space: normal;
+    vertical-align: top;
+    color: white;
+    border-radius: 10px;
+}
+
+.gallery div div img:hover {
+    transition: transform 0.5s ease-out;
+    transform: scale(1.1);
+}
+
+table.nationals,
+table.nationals th,
+table.nationals td {
+    /* border-style: none;
+    border-width: 0px; */
+    text-align: left;
+    border-color: white;
+}
+
+.recommendations div i {
+    color: white;
+    padding: 20px;
+    margin: auto;
+    background-color: #e2631f;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.recommendations div>ul {
+    display: inline-block;
+}
+
+.accordion,
+.accordion-item,
+.accordion-header,
+.accordion-header .btn,
+.accordion-header .btn:hover {
+    background-color: #e2631f;
+    color: white;
+    text-align: left;
+}
+
+
+/* .accordion-item {
+    border-style: none;
+} */
+
+.accordion-header {
+    padding: 10px;
+}
+
+.accordion-header .btn {
+    width: 100%;
+    text-align: left;
+    border-radius: 0%;
+    border-color: white;
+    border-style: dotted;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+.accordion-body {
+    padding: 5px 10px;
+}
+
+.accordion-body p {
+    margin: 0;
+}
+
+table.timeline,
+table.timeline tr,
+table.timeline td {
+    border-style: none;
+    border-width: 0px;
+}
+
+table.timeline td:first-child {
+    border-right: solid 3px black;
+}
+
+table.timeline td {
+    width: 50%;
+}
+
+.timeline tr .data-left,
+.timeline tr .data-right {
+    background-color: #e2631f;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.timeline tr .data-left {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.timeline tr .data-right {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.timeline tr .data-left p,
+.timeline tr .data-right p,
+.timeline tr .data-left h4,
+.timeline tr .data-right h4 {
+    padding: 20px;
+    color: white;
+}
+
+#footer {
+    background-color: grey;
+    font-size: small;
+    padding: 10px;
+    bottom: 0;
+}
+
+@keyframes btn-hover {
+    0% {
+        background-color: #e2631f;
+    }
+    100% {
+        background-color: #d24c04;
+    }
+}
