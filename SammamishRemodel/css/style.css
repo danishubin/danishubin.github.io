@@ -1,0 +1,41 @@
+.centered {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text-left {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.title {
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header {
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.contact {
+    font-size: 18px;
+    color: rgb(120, 120, 120);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.line {
+    height: 2.5px;
+    background-color: rgb(120, 120, 120);
+    margin: 10px;
+}
