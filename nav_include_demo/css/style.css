@@ -1,4 +1,4 @@
-.nav {
+nav {
     width: 100vw;
     background-color: cadetblue;
 }
@@ -25,6 +25,7 @@
     position: absolute;
     bottom: 0;
     background-color: cadetblue;
+    width: 100vw;
 }
 
 .footer .content {
