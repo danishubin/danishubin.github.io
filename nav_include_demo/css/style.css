@@ -13,8 +13,11 @@ nav {
     font-style: normal;
 }
 
-.menu-item a {
+.menu-item a,
+.menu-item a:visited,
+.menu-item a:hover {
     text-decoration: none;
+    color: white;
 }
 
 .menu-item:hover {
