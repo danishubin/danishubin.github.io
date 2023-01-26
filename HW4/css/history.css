@@ -1,0 +1,93 @@
+.container {
+    height: 60vh;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left {
+    float: left;
+    height: 100%;
+    background-color: black;
+    padding: 10px;
+    width: 20%;
+}
+
+.left a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+
+.img,
+.text {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .container {
+        height: 80vh;
+    }
+    .img,
+    .text {
+        margin: 0 auto;
+    }
+    .img {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .text {
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .img img {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width:620px) {
+    .left {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+        border: none;
+    }
+    .left a {
+        display: inline;
+        padding: 0 5px;
+    }
+    .lefthide {
+        display: none;
+    }
+    .content {
+        width: 100%;
+        height: auto;
+    }
+    .img img {
+        height: 300px;
+    }
+}

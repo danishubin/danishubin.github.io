@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    width: 20%;
+    clear: both;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+@media (max-width:620px) {
+    .footer {
+        width: 100%;
+    }
+}
