@@ -90,6 +90,10 @@ nav {
     padding: 30px 10px;
 }
 
+.footer h4 {
+    text-align: center;
+}
+
 form {
     margin: auto;
     width: 500px;
