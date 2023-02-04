@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Questrial;
+}
+
+.sky {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(135, 206, 235);
+}
+
+.gandalf {
+    position: absolute;
+    height: 200px;
+    top: calc(100% - 200px);
+    left: calc(90% - 169px);
+    display: none;
+}
+
+.sun {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    border-radius: 50%;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+}
+
+.q2,
+.q3,
+.q4 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.pirate_boat {
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    z-index: 1;
+}
+
+.pirate_boat img {
+    height: 300px;
+}
+
+.water {
+    position: absolute;
+    top: 40%;
+    height: 60vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+.jack {
+    position: absolute;
+    height: 200px;
+    top: calc(100% - 200px);
+    left: calc(90% - 260px);
+}
+
+.brain {
+    position: absolute;
+    height: 50px;
+    top: calc(100% - 50px);
+    left: calc(20% - 50px);
+}
+
+.green-light {
+    background-color: darkgreen;
+    opacity: 0%;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    height: 40vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.q4 {
+    background-image: url("../images/wallpaper.jpg");
+    background-size: cover;
+}
+
+.sherlocked {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: calc(50% - 120px);
+    text-align: center;
+    font-size: xx-large;
+    line-height: 40px;
+    color: white;
+}
+
+.code input {
+    width: 40px;
+    height: 40px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.gallery {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    column-count: 4;
+    column-fill: balance;
+    column-gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    width: 80%;
+    padding: 20px 0;
+    background-color: cornsilk;
+    margin: 10px auto;
+    border-color: black;
+    border-width: 2px;
+    border-style: ridge;
+}
+
+.header h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.gallery img {
+    width: 80%;
+    border: 2px;
+    border-color: black;
+    border-style: ridge;
+    margin: auto;
+}
+
+@keyframes green-pulse {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 1000px) {
+    .container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        column-count: 1;
+    }
+}
