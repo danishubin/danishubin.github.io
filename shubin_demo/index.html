@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubin Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; text-decoration:underline;">Scroll Animation Demo</h1>
+    <div class="step">
+        <h4 class="header">Step 1</h4>
+        <p class="text">The first step involves setting up the website. Create the default HTML, JS, and CSS files and link them together. Then fill the page with divs so that you can scroll up and down and view the different content. Use Lorem to add text and add a
+            reveal class to each div. You can add multiple of the divs in the sample code below to fill the page.</p>
+        <div class="code">
+            <code>div class="container one reveal"
+                <br> <span class="tab"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, atque dolorum quibusdam labore officia minus sint culpa, harum qui deserunt corrupti exercitationem laudantium nisi illo animi, incidunt eligendi sit facere? <br>
+            /div</code>
+        </div>
+    </div>
+    <div class="step">
+        <h4 class="header">Step 2</h4>
+        <p class="text">Time to add the CSS. Go to the CSS and style the page as wanted. Add a style to the .reveal class in css. Give it a position of relative and position off the screen to the top. Make its opacity 0 (the user can't see it yet) and give it a transition
+            of 2s. Also, add a class of .active to the stylesheet and give it the properties to position it to start at Y = 0. Give it an opacity of 1.</p>
+        <div class="code">
+            <code>
+                .reveal{ <br>
+                    <span class="tab"></span> position: relative; <br>
+                    <span class="tab"></span> transform: translateY(150px); <br>
+                    <span class="tab"></span>opacity: 0; <br>
+                    <span class="tab"></span>transition: 2s all ease; <br>
+                  } <br>
+                  .active{ <br>
+                    <span class="tab"></span>transform: translateY(0); <br>
+                    <span class="tab"></span>opacity: 1; <br>
+                  }
+            </code>
+        </div>
+    </div>
+    <div class="step">
+        <h4 class="header">Step 3</h4>
+        <p class="text">Time to add the JS. To create the function we will need to check it each time a user scrolls (either up or down), check the users location on a page, and see where each div is located.</p>
+        <div class="code">
+            <code>
+                function reveal() { <br>
+                    <span class="tab"></span>var reveals = document.getElementsByClassName("reveal"); <br>
+                    <span class="tab"></span>for (var i = 0; i < reveals.length; i++) { <br>
+                        <span class="tab"></span><span class="tab"></span>var windowHeight = window.innerHeight; <br>
+                        <span class="tab"></span><span class="tab"></span>var elementTop = reveals[i].getBoundingClientRect().top; <br>
+                        <span class="tab"></span><span class="tab"></span>var elementVisible = 150; <br>
+                        <span class="tab"></span><span class="tab"></span>if (elementTop < windowHeight - elementVisible) { <br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>    reveals[i].classList.add("active"); <br>
+                        <span class="tab"></span><span class="tab"></span>}<br>
+                        <span class="tab"></span>} <br>
+                } <br>
+                
+                window.addEventListener("scroll", reveal); <br>
+                
+                // To check the scroll position on page load <br>
+                reveal(); <br>
+            </code>
+        </div>
+        <p class="text">Now, lets break it down. We are creating a function called reveal that we will call each time the user "scrolls". Then, we are getting all the divs with class reveal using document.getElementsByClassName("reveal"). For each element we go through
+            one by one and check to see the windowHeight (how far the user has scrolled), get the divs distance from the top, and setting a variable elementVisible to set the distance at which the div should become visible. Then we check if the element
+            is visible and if it is, we add the active class to the div. This will call the transition the active class contains and move the div into view.</p>
+
+    </div>
+    <div class="step">
+        <h4 class="header">Step 4</h4>
+        <p class="text">This is how it should look:
+            <a href="https://danishubin.github.io/scroll_animation_demo/" target="_blank">https://danishubin.github.io/scroll_animation_demo/</a>
+            <br> And now it is time for you to play around with it. You cann position the reveal class in different positions to change the location from which the div appears. Happy coding :)!</p>
+    </div>
+</body>
+
+</html>

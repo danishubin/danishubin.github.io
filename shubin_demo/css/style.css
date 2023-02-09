@@ -1,0 +1,30 @@
+body {
+    /* background-color: black; */
+    color: black;
+    font-family: monospace;
+}
+
+.step {
+    /* background-color: rgb(61, 59, 59); */
+    width: 80%;
+    margin: auto;
+    padding: 1px 10px;
+}
+
+.header {
+    text-align: center;
+    font-size: large;
+}
+
+.code {
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
