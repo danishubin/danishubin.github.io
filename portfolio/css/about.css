@@ -1,0 +1,12 @@
+.row .col-md-6 p {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+.row .col-md-6 img {
+    width: 70%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}

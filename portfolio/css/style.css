@@ -4,10 +4,13 @@ body {
 }
 
 .navbar {
-    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
 }
 
 .nav-item a {
+    width: 100%;
     font-size: large;
     text-align: center;
 }
@@ -16,7 +19,8 @@ body {
     text-decoration: underline;
 }
 
-h1 {
+h1,
+h4 {
     font-family: "video", serif;
     font-weight: 700;
     font-style: normal;
@@ -24,41 +28,11 @@ h1 {
 }
 
 p,
-a {
+a,
+.btn,
+.close {
     font-family: "video", serif;
     font-weight: 400;
     font-style: normal;
     width: fit-content;
-}
-
-.row {
-    width: 100vw;
-}
-
-.home .row {
-    height: 80vh;
-}
-
-.col-md-12 {
-    text-align: center;
-    margin: auto;
-}
-
-.col-md-12 h1 {
-    margin: auto;
-}
-
-#about .row .col-md-6 {}
-
-#about .row .col-md-6 p {
-    width: 70%;
-    margin: auto;
-    padding: 10px;
-}
-
-#about .row .col-md-6 img {
-    width: 70%;
-    margin: auto;
-    display: block;
-    padding: 10px;
 }
