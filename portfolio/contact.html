@@ -59,23 +59,18 @@
 </body>
 <script>
     var navOpen = false;
-    var background = document.getElementsByClassName("background")[0];
     var navBar = document.getElementsByClassName("navbar")[0];
     var container = document.getElementsByClassName("container")[0];
+    container.style.transition = "opacity 1s";
+    container.style.opacity = "1";
 
     function navBarOpen() {
         if (!navOpen) {
             navOpen = true;
-            background.style.transition = "none";
-            background.style.opacity = "0";
-            navBar.style.backgroundColor = "black";
             container.style.transition = "none";
             container.style.opacity = "0";
         } else {
             navOpen = false;
-            background.style.transition = "opacity 1s";
-            background.style.opacity = "0.5";
-            navBar.style.backgroundColor = "transparent";
             container.style.transition = "opacity 1s";
             container.style.opacity = "1";
         }
