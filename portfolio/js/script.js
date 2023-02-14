@@ -1,16 +1,21 @@
 navLogo = document.getElementsByClassName("nav-logo")[0];
 
-// function navLogoScroll() {
-//     var windowHeight = window.innerHeight;
-//     var elementVisible = 150;
-//     if (windowHeight - elementVisible > 0) {
-//         navLogo.style.display = "inherit";
-//     } else {
-//         navLogo.style.display = "inherit";
-//     }
-// }
 
-// window.addEventListener("scroll", navLogoScroll);
+function pageAnimate() {
+    var layers = document.getElementsByClassName("top-layer");
+    var fadeIn = document.getElementsByClassName("fade-in")[0];
+    for (var j = 0; j < layers.length; j++) {
+        layers[j].classList.toggle("active");
+    }
+    fadeIn.style.opacity = 1;
+}
 
-// // To check the scroll position on page load
-// navLogoScroll();
+window.onload = function() {
+    pageAnimate();
+};
+
+// Each time page is reloaded, scroll up
+history.scrollRestoration = "manual";
+window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+}

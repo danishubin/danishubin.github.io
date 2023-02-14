@@ -1,3 +1,9 @@
+body,
+.navbar {
+    background-color: white;
+    color: black;
+}
+
 .container {
     position: relative;
 }
@@ -12,7 +18,11 @@
 
 .gallery .row .col-lg-4 img {
     width: 100%;
-    padding: 10px;
+    height: 100%;
+    padding: 1px;
+    filter: brightness(100%);
+    /* opacity: 1; */
+    transition: filter 0.2s;
 }
 
 .gallery .row .col-lg-4 .overlay {
@@ -20,9 +30,9 @@
     height: 100%;
     position: absolute;
     z-index: 1;
-    padding: 10px;
+    padding: 1px;
     top: 0%;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -42,6 +52,10 @@
     opacity: 1;
 }
 
+.gallery .row .col-lg-4:hover img {
+    filter: brightness(50%);
+}
+
 .galleryVideo {
     position: absolute;
     top: 10%;
@@ -53,8 +67,18 @@
     text-align: center;
 }
 
+.galleryVideo .row .col-md-3 .links {
+    margin: auto;
+}
+
+.galleryVideo .row .col-md-3 .links a,
+.galleryVideo .row .col-md-3 .links p {
+    display: inline-block;
+    padding: 0 5px;
+}
+
 .space {
-    height: 20px;
+    height: 10px;
 }
 
 .close {
