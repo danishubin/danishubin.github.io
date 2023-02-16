@@ -1,4 +1,4 @@
-// Contact Form Here
+// Contact Form Here from https://geekthis.net/post/website-contact-form-without-php/
 var form = document.forms["contact"];
 form.addEventListener('submit', contact_submit, false);
 
@@ -15,13 +15,11 @@ function contact_submit(e) {
     // Set Form Values to Variables
     var name = target.elements['name'].value;
     var subject = target.elements['subject'].value;
-    var phone = target.elements['phone'].value;
     var message = target.elements['message'].value;
 
     // Build Body / Message with all Input Fields
     body += message + "\r\n\r\n";
     body += "Name: " + name + "\r\n";
-    body += "Phone Number: " + phone + "\r\n";
 
     // Build final Mailto URI
     uri += '?subject=' + encodeURIComponent(subject);

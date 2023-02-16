@@ -13,6 +13,14 @@ function pageAnimate() {
         window.scrollTo(0, 0);
     }
     fadeIn.style.opacity = 1;
+    setTimeout(() => {
+        var layers = document.getElementsByClassName("top-layer");
+        for (var j = 0; j < layers.length; j++) {
+            layers[j].style.transition = 'none';
+            layers[j].style.opacity = '0';
+            layers[j].style.left = '-100%';
+        }
+    }, 1500)
 }
 
 window.onload = function() {

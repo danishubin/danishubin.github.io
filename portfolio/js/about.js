@@ -6,18 +6,20 @@ function navColor() {
     for (var i = 0; i < colors.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = colors[i].getBoundingClientRect().top;
-        var elementVisible = 300;
+        var elementVisible = 400;
         if (elementTop < windowHeight - elementVisible) {
             if (i == 0) {
                 navBar.style.backgroundColor = "#F28729";
                 navBar.classList.remove("navbar-dark");
                 navBar.classList.add("navbar-light");
+                document.body.style.backgroundColor = "#F28729";
             }
         } else {
             if (i == 1) {
                 navBar.style.backgroundColor = "#5B26A6";
                 navBar.classList.remove("navbar-light");
                 navBar.classList.add("navbar-dark");
+                document.body.style.backgroundColor = "#5B26A6";
             }
         }
     }

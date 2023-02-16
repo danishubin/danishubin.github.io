@@ -1,0 +1,95 @@
+body,
+.navbar {
+    background-color: #F28729;
+    display: -moz-inline-box;
+}
+
+.profile {
+    width: 80%;
+    border-radius: 5px;
+    border: 3px white solid;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    object-position: 0 0;
+    /* object-fit: cover;
+    object-position: 0 0; */
+    /* border-radius: 5px 5px 0 0; */
+}
+
+.text {
+    padding: 15px 10px 0 10px;
+}
+
+div.name h4 {
+    display: inline-block;
+}
+
+div.data {
+    /* float: left; */
+    /* width: 50%; */
+    border-top: 2px solid white;
+}
+
+div.data .row .type {
+    background-color: #d0680e;
+    margin: 0;
+    /* width: 70%; */
+}
+
+div.data .row .type,
+div.data .row .num {
+    /* display: inline-block; */
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+    /* float: left; */
+    /* width: 50%; */
+}
+
+div.data .row .type p,
+div.data .row .num p {
+    margin: 0;
+}
+
+div.rating {
+    border-top: 2px solid white;
+}
+
+.FIDE {
+    color: white;
+    background-color: #BAC8D9;
+}
+
+.USCF {
+    color: white;
+    background-color: #D9626B;
+}
+
+.chesscom {
+    color: white;
+    background-color: #4B69A6;
+}
+
+.FIDE h4,
+.USCF h4,
+.chesscom h4 {
+    padding-top: 20px;
+}
+
+.map {
+    width: 80%;
+    height: 100%;
+    min-height: 400px;
+    padding-top: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}

@@ -46,6 +46,10 @@ body,
     width: 100vw;
 }
 
+.footer {
+    background-color: #5B26A6;
+}
+
 @media (max-width: 1000px) {
     .about {
         clear: both;
@@ -70,6 +74,7 @@ body,
     .about img {
         float: left;
         height: 80vh;
+        max-width: 100%;
         position: inherit;
         margin: auto;
     }

@@ -22,3 +22,11 @@ body {
 .home .text h1 {
     font-size: 75px;
 }
+
+.footer {
+    position: absolute;
+    z-index: 3;
+    /* left: 0;
+    width: 100%; */
+    top: calc(100% - 56px);
+}

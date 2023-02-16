@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/bai3gie.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
+    <!-- Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -35,13 +37,13 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="webdesign.html">Web Design</a>
+                            <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="art.html">Art</a>
+                            <a class="nav-link" href="chess.html">Chess</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="other.html">Other</a>
+                            <a class="nav-link" href="experience.html">Experience</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="contact.html">Contact</a>
@@ -50,24 +52,37 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">Socials</div>
-                <div class="col-md-6">Contact Form
-                    <form name="contact" method="post">
-                        <label>Name</label>
-                        <input type="text" name="name" />
-                        <label>Subject</label>
-                        <input type="text" name="subject" />
-                        <label>Phone Number</label>
-                        <input type="text" name="phone" />
-                        <label>Message</label>
-                        <textarea name="message"></textarea>
-
-                        <input type="submit" name="send" value="Send Message" />
-                    </form>
-                </div>
+        <div class="contain">
+            <div class="contact">
+                <h4>Contact Me Today!</h4>
+                <div class="space"></div>
+                <p>Email: <a href="mailto: shubindani@gmail.com">shubindani@gmail.com</a></p>
+                <div class="space"></div>
+                <p>Phone:
+                    <a href="tel:4254990442">+14254990442</a>
+                </p>
+                <form name="contact" method="post">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name..." />
+                    </div>
+                    <div class="space"></div>
+                    <div class="field">
+                        <input type="text" name="subject" placeholder="Subject..." />
+                    </div>
+                    <div class="space"></div>
+                    <div class="field">
+                        <textarea name="message" placeholder="Message..."></textarea>
+                    </div>
+                    <div class="space"></div>
+                    <input class="submit" type="submit" name="send" value="Send Message" />
+                    <div class="space"></div>
+                </form>
             </div>
+        </div>
+        <div class="footer">
+            <a href="https://www.instagram.com/shubindani/?hl=en" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://twitter.com/DaniShubin" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.facebook.com/dani.shubin.5" class="fa fa-facebook" target="_blank"></a>
         </div>
     </div>
     <div class="top-layer top-layer-1"></div>
@@ -80,7 +95,7 @@
 <script>
     var navOpen = false;
     var navBar = document.getElementsByClassName("navbar")[0];
-    var container = document.getElementsByClassName("container")[0];
+    var container = document.getElementsByClassName("contain")[0];
     container.style.transition = "opacity 1s";
     container.style.opacity = "1";
 
