@@ -16,6 +16,7 @@ body,
     top: calc(0% + 150px);
     position: relative;
     height: 100vh;
+    /* overflow-x: hidden; */
 }
 
 .about .text {
@@ -43,7 +44,7 @@ body,
 .timeline {
     height: 100vh;
     background-color: #F28729;
-    width: 100vw;
+    width: 100%;
 }
 
 .footer {
@@ -54,8 +55,6 @@ body,
     .about {
         clear: both;
         position: inherit;
-        /* height: fit-content; */
-        height: calc(250px + 80vh);
     }
     .about .text {
         float: left;

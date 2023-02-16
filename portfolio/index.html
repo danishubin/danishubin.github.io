@@ -107,6 +107,29 @@
             container.style.opacity = "1";
         }
     }
+
+    window.addEventListener('resize', event => {
+        if (screen.width > 779) {
+            background.style.transition = "opacity 1s";
+            background.style.opacity = "0.5";
+            navBar.style.backgroundColor = "transparent";
+            container.style.transition = "opacity 1s";
+            container.style.opacity = "1";
+        }
+        if (screen.width < 779 && navOpen) {
+            background.style.transition = "none";
+            background.style.opacity = "0";
+            navBar.style.backgroundColor = "black";
+            container.style.transition = "none";
+            container.style.opacity = "0";
+        } else if (screen.width < 779 && !navOpen) {
+            background.style.transition = "opacity 1s";
+            background.style.opacity = "0.5";
+            navBar.style.backgroundColor = "transparent";
+            container.style.transition = "opacity 1s";
+            container.style.opacity = "1";
+        }
+    });
 </script>
 <script src="js/script.js"></script>
 

@@ -521,6 +521,17 @@
             container.style.opacity = "1 ";
         }
     }
+
+    window.addEventListener('resize', event => {
+        if (screen.width > 779) {
+            container.style.transition = "opacity 1s ";
+            container.style.opacity = "1 ";
+        }
+        if (screen.width < 779 && navOpen) {
+            container.style.transition = "none ";
+            container.style.opacity = "0 ";
+        }
+    });
 </script>
 <script type="text/javascript " src="js/script.js "></script>
 <script src="js/gallery.js "></script>

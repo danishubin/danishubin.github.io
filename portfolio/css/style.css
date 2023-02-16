@@ -16,6 +16,7 @@ body {
     color: white;
     overflow-x: hidden;
     height: 100%;
+    overflow-wrap: break-word;
 }
 
 .fade-in {
@@ -32,6 +33,10 @@ body {
 
 .navbar-brand {
     margin-left: 50px;
+}
+
+.navbar-toggler {
+    margin-right: 50px;
 }
 
 .navbar-nav {
@@ -84,7 +89,23 @@ textarea,
     opacity: 1;
 }
 
-.top-layer.active {
+.top-layer-1.active {
+    left: 100%;
+}
+
+.top-layer-2.active {
+    left: 100%;
+}
+
+.top-layer-3.active {
+    left: 100%;
+}
+
+.top-layer-4.active {
+    left: 100%;
+}
+
+.top-layer-5.active {
     left: 100%;
 }
 
@@ -149,8 +170,19 @@ textarea,
     font-size: medium;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .navbar-nav {
         margin-right: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-brand {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .navbar-toggler {
+        margin-right: auto;
+        margin-left: auto;
     }
 }
