@@ -16,7 +16,6 @@ body,
     top: calc(0% + 150px);
     position: relative;
     height: 100vh;
-    /* overflow-x: hidden; */
 }
 
 .about .text {

@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    /* background-color: black; */
     color: white;
     overflow-x: hidden;
     height: 100%;
@@ -143,7 +142,6 @@ textarea,
 
 .top-layer-2 {
     background: #F2D338;
-    /* transition-delay 0.6s */
     transition-property: all;
     transition-duration: 0.9s;
     transition-delay: 0.6s;
@@ -151,7 +149,6 @@ textarea,
 }
 
 .top-layer-3 {
-    /* background: #6c5b7b transition-delay 0.4s; */
     background: #F28729;
     transition-property: all;
     transition-duration: 0.9s;
@@ -160,7 +157,6 @@ textarea,
 }
 
 .top-layer-4 {
-    /* background: #c06c84 transition-delay 0.2s; */
     background: #F25116;
     transition-property: all;
     transition-duration: 0.9s;
@@ -169,7 +165,6 @@ textarea,
 }
 
 .top-layer-5 {
-    /* background: #f67280 transition-delay 0.1s; */
     background: #0D0D0D;
     transition-property: all;
     transition-duration: 0.9s;
@@ -186,8 +181,6 @@ textarea,
     text-align: center;
     width: 100vw;
     left: 0;
-    /* left: 0;
-    width: 100%; */
 }
 
 .fa {

@@ -17,7 +17,6 @@ body,
     max-height: 300px;
     object-fit: cover;
     object-position: 0 0;
-    /* border-radius: 5px 5px 0 0; */
 }
 
 .text {
@@ -29,25 +28,19 @@ div.name h4 {
 }
 
 div.data {
-    /* float: left; */
-    /* width: 50%; */
     border-top: 2px solid white;
 }
 
 div.data .row .type {
     background-color: #d0680e;
     margin: 0;
-    /* width: 70%; */
 }
 
 div.data .row .type,
 div.data .row .num {
-    /* display: inline-block; */
     text-align: center;
     padding: 10px;
     height: 100%;
-    /* float: left; */
-    /* width: 50%; */
 }
 
 div.data .row .type p,
