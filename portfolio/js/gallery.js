@@ -35,3 +35,28 @@ window.addEventListener("scroll", navColor);
 
 // To check the scroll position on page load
 navColor();
+
+
+var leftArrow1 = document.getElementsByClassName("left")[0];
+var rightArrow1 = document.getElementsByClassName("right")[0];
+var DPgallery = document.getElementsByClassName("sliding-gallery")[0];
+
+leftArrow1.addEventListener("click", function() {
+    DPgallery.scrollBy(-200, 0);
+});
+
+rightArrow1.addEventListener("click", function() {
+    DPgallery.scrollBy(200, 0);
+});
+
+var leftArrow2 = document.getElementsByClassName("left")[1];
+var rightArrow2 = document.getElementsByClassName("right")[1];
+var DGgallery = document.getElementsByClassName("sliding-gallery")[1];
+
+leftArrow2.addEventListener("click", function() {
+    DGgallery.scrollBy(-200, 0);
+});
+
+rightArrow2.addEventListener("click", function() {
+    DGgallery.scrollBy(200, 0);
+});
