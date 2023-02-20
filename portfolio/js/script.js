@@ -20,11 +20,6 @@ function pageAnimate() {
     for (var j = 0; j < layers.length; j++) {
         layers[j].classList.toggle("active");
     }
-    // Each time page is reloaded, scroll up
-    history.scrollRestoration = "manual";
-    window.onbeforeunload = function() {
-        window.scrollTo(0, 0);
-    }
     fadeIn.style.opacity = 1;
 }
 
