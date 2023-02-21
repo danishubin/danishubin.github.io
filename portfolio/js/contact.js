@@ -1,5 +1,5 @@
 // Contact Form Here from https://geekthis.net/post/website-contact-form-without-php/
-var form = document.forms["contact"];
+var form = document.forms["contact-form"];
 form.addEventListener('submit', contact_submit, false);
 
 function contact_submit(e) {
