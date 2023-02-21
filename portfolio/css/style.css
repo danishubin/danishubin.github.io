@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
     height: 100%;
     overflow-wrap: break-word;
+    transition: all 0.5s;
 }
 
 

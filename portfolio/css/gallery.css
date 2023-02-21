@@ -4,6 +4,10 @@ body,
     color: black;
 }
 
+.navbar {
+    transition: background-color 0.5s;
+}
+
 .contain {
     position: relative;
     margin: 0;
