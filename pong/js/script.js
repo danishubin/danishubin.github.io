@@ -111,7 +111,7 @@ function moveSlider() {
         // D Key
         leftSlider.style.left = leftSlider.offsetLeft + sliderMoveSpeed + "px";
     }
-    if (keysPressed.includes("W") && (rightSlider.offsetTop > 0)) {
+    if (keysPressed.includes("W") && (leftSlider.offsetTop > 0)) {
         // W Key
         leftSlider.style.top = leftSlider.offsetTop - sliderMoveSpeed + "px";
     }
