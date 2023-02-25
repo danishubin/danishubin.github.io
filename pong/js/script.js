@@ -1,5 +1,5 @@
 // ball, speed, left, top
-var ball = [document.getElementsByClassName("ball")[0], 2, -1, 1];
+var ball = [document.getElementsByClassName("ball")[0], 3, -1, 1];
 var ballBounds = ball[0].getBoundingClientRect();
 
 var leftHalf = document.getElementsByClassName("left-half")[0];
@@ -32,7 +32,7 @@ function updateScore() {
     clearInterval(moveBall);
     ball[0].style.left = "calc(50% - 10px)";
     ball[0].style.top = "calc(50% - 10px)";
-    ball[1] = 2;
+    ball[1] = 3;
     ballBounds = ball[0].getBoundingClientRect();
 
     leftSlider.style.left = "calc(10px)";
