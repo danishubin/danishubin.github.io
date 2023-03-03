@@ -236,10 +236,6 @@ body,
     padding: 0 5px;
 }
 
-.space {
-    height: 10px;
-}
-
 .close {
     font-size: 40px;
     cursor: pointer;
@@ -251,10 +247,7 @@ body,
 }
 
 .footer {
+    border-top: white solid 2px;
     background-color: #F25116;
-    color: white;
-}
-
-.fa {
     color: white;
 }

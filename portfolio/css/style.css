@@ -184,6 +184,34 @@ textarea,
     left: 0;
 }
 
+.fa,
+.hand {
+    display: inline-block;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    padding: 10px;
+}
+
 .fa {
     padding: 10px;
     color: white;
@@ -191,9 +219,41 @@ textarea,
     font-size: medium;
 }
 
+.hand {
+    margin: 0;
+    animation: wave 1s linear 0s infinite alternate;
+}
+
+.space {
+    height: 10px;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
 @media (max-width: 700px) {
     .navbar-nav {
         margin-right: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-links {
+        display: inherit;
+    }
+    .footer-links li {
+        display: inherit;
+        width: 100%;
+    }
+    .footer-links li a {
+        width: 100%;
+        text-align: center;
     }
 }
 

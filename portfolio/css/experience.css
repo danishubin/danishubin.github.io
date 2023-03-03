@@ -31,6 +31,6 @@ body,
     margin-bottom: 30px;
 }
 
-div.space {
-    height: 10px;
+.footer {
+    border-top: white solid 2px;
 }
