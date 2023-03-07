@@ -23,7 +23,7 @@ body,
     padding: 15px 10px 0 10px;
 }
 
-div.name h4 {
+.text .name h4 {
     display: inline-block;
 }
 
