@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 20%;
+    height: 100vh;
+    background-color: darkblue;
+    color: white;
+    float: left;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav ul li {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav ul li:hover {
+    background-color: black;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    width: 80%;
+    float: left;
+    margin: auto;
+    justify-content: center;
+}
+
+.main .row {
+    width: 100%;
+    float: left;
+}
+
+.main .row .col-md-6 {
+    width: 50%;
+    height: 40vh;
+    float: left;
+}
+
+.profile {
+    background-color: darkblue;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+}
