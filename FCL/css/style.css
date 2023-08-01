@@ -3,12 +3,18 @@ body {
     padding: 0;
 }
 
+.row.body {
+    width: 100vw;
+}
+
 .nav {
-    width: 20%;
     height: 100vh;
     background-color: darkblue;
     color: white;
-    float: left;
+}
+
+.col-md-2.nav {
+    padding: 0;
 }
 
 .nav ul {
@@ -32,29 +38,13 @@ body {
     text-decoration: none;
 }
 
-.main {
-    width: 80%;
-    float: left;
-    margin: auto;
-    justify-content: center;
-}
-
-.main .row {
-    width: 100%;
-    float: left;
-}
-
-.main .row .col-md-6 {
-    width: 50%;
-    height: 40vh;
-    float: left;
+.team {
+    padding-top: 10px;
 }
 
 .profile {
     background-color: darkblue;
     margin: auto;
     justify-content: center;
-    width: 80%;
-    height: 80%;
-    padding: 20px;
+    height: calc(50vh - 10px);
 }
