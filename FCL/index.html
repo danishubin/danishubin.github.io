@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquerycsvtotable/jquery.csvToTable.js"></script>
 </head>
 
 <body>
-    <div class="row body">
+    <!-- <div class="row body">
         <div class="col-md-2 nav">
             <ul>
                 <li>
@@ -46,7 +48,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <div id="CSVTable"></div>
+
 </body>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//jquerycsvtotable.googlecode.com/files/jquery.csvToTable.js"></script> -->
+<script>
+    $(function() {
+        $('#CSVTable').CSVToTable('playerTTData.csv');
+    });
+</script>
 
 </html>

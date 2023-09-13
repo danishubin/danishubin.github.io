@@ -14,7 +14,7 @@ def getTitledPlayers():
         if response.status_code != 200:
         # The request failed
             # Handle the error
-            print("error")
+            print("error1")
             quit()
 
         else: 
@@ -48,7 +48,7 @@ def getPlayerTTResults(username):
     if response.status_code != 200:
     # The request failed
         # Handle the error
-        print("error")
+        print("error2")
         quit()
 
     else: 
@@ -83,7 +83,7 @@ def ttPlayerData():
         if response.status_code != 200:
         # The request failed
             # Handle the error
-            print("error")
+            print("error3")
             quit()
 
         else: 
@@ -102,7 +102,7 @@ def ttPlayerData():
         if response.status_code != 200:
         # The request failed
             # Handle the error
-            print("error")
+            print("error4")
             quit()
 
         else: 
