@@ -48,3 +48,12 @@ body {
     justify-content: center;
     height: calc(50vh - 10px);
 }
+
+#CSVTable {
+    background-color: white;
+}
+
+#CSVTable tr:last-child td {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
