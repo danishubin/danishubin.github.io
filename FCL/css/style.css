@@ -50,10 +50,40 @@ body {
 }
 
 #CSVTable {
-    background-color: white;
+    width: 100vw;
+    padding: 20px;
+    margin: auto;
 }
 
-#CSVTable tr:last-child td {
-    overflow-x: hidden;
+#CSVTable td {
+    max-width: 17vw;
+    overflow-y: hidden;
     white-space: nowrap;
+    padding: 20px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+td::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+td {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#CSVTable th,
+#CSVTable tr,
+#CSVTable td {
+    border: black 1px solid;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
 }
