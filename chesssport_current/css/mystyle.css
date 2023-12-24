@@ -1,0 +1,256 @@
+html {
+	font-family:Tahoma,Arial,Helvetica,Sans-Seriff;
+}
+body {
+	margin:0;
+	padding:0;
+	background:#e0e0e0;
+}
+tr.sep {
+}
+#wrapper {
+	margin: 0 auto;
+	border-collapse:collapse;
+	background:#e0e0e0;
+	min-width:960px;
+	max-width:960px;
+}
+tr.banner {
+	font:Helvetica,Arial,Tahoma;
+  background-image: url('http://biteread.com/gradients/banner.png');
+  background-repeat: repeat-x;
+
+}
+tr.banner td {
+	padding:0.4em 0;
+
+}
+tr.banner .logoban {
+	/*
+	font-size:xx-large;
+	letter-spacing:-0.08em;
+	*/
+
+}
+tr.banner .hiban {
+	color:#006f48;
+}
+tr.banner .oppban {
+	color:#ff9700;
+	color:#04396c;
+}
+tr.banner .opp2ban {
+	color:#4f5f6d;
+}
+tr.banner .owner {
+	color:#1E3F5F;
+	font-size:x-large;
+	letter-spacing:-0.1em;
+}
+tr.ruler td{
+	height:1px;
+	line-height:1px;
+	max-width:80px;
+	min-width:80px;
+	width:80px;
+}
+td {
+	border:0;
+	/*
+	border:1px solid navy;
+	*/
+}
+tr.footer {
+	font-size:x-small;
+	background:#ddd;
+	color:#666;
+}
+tr.footer td {
+	border-top:1px solid #999;
+	padding:0.5em 0;
+}
+tr.menu td  {
+	color:#ddd;
+	/*
+	font-family:'Century Gothic',Arial,sans-serif;
+	*/
+	font-family:Arial;
+	background:#6B6B6B;
+	padding:.5em .35em;	
+	border-right:1px solid #aaa;
+	position:relative;
+	text-align:center;
+
+}
+tr.menu td.curmenu {
+	background:#969696;
+}
+tr.menu  td a {
+	color:#d8d8d8;
+	text-decoration:none;
+}
+tr.menu  td a:hover {
+	text-decoration:underline;
+	color:#00AE68;
+	color:white;
+}
+tr.menu td ul {
+	display:none;
+	position:absolute;
+	background:#6B6B6B;
+	margin:0;
+	padding:4px;
+	list-style:none;
+	width:150px;div
+	border:2px solid;
+	border-radius:9px;
+	list-style:disc inside;
+	font-size:11pt;
+	text-align:left;
+
+}
+tr.menu td ul li {
+	min-width:140px;
+	width:140px;
+	padding:0.3em 0;
+	text-align:left;
+}
+tr.menu td:hover ul {
+	display:block;
+}
+tr.bigpane {
+	background:#ccc;
+	font-size:14pt;
+
+}
+tr.bigpane td {
+	text-align:left;
+	vertical-align:top;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+tr.bigpane td h3 {
+	padding:1em 0;
+
+}
+tr.panes {
+}
+tr.panes td {
+	cursor:pointer;
+	vertical-align:top;
+	height:10em;
+	color:#666666
+
+}
+
+}
+tr.panes td:hover {
+	cursor:pointer;
+	color:green;
+}
+
+tr.panes td div {
+	background:#CCC;
+	margin-right:1em;
+	height:100%;
+	padding:0.2em 0.5em 0.5em 0.5em;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align:left;
+
+}
+
+tr.panes td div.lastpane {
+	margin-right:0em
+	color:#858585
+}
+tr.panes td div h3 {
+	font-weight:bold;
+	font-size:11pt;
+	color:black;
+	text-align:left;
+}
+tr.blackpanes {
+}
+
+tr.blackpanes td div {
+	background:#ccc;
+	margin-right:1em;
+	height:100%;
+	padding:0.2em 0.5em 0.5em 0.5em;
+}
+tr.blackpanes td div.lastpane {
+	margin-right:0em
+}
+tr.blackpanes td div h3 {
+	font-weight:bold;
+	font-size:11pt;
+	text-align:left;
+}
+tr.legend {
+	font-size:small;
+}
+tr.legend td a {
+	text-decoration:none;
+}
+tr.legend td a:hover {
+	text-decoration:underline;
+}
+tr.link td a{
+	color="#4f7165";
+}
+tr.color {
+	text-decoration:none;
+	color:#4f7165;
+}
+.designed {
+	color:#666;
+}
+.designed:hover {
+	color:black;
+	font-weight:bold;
+}
+.alert {
+  width: 100%;
+  position: fixed;
+  height: 10px;
+  right: 0;
+  top: -5px;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 120px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ffa100;
+  border-top-right-radius: 2px;
+  }
+
+.info {
+  padding:0 2em 4em 2em;
+}
+
+.info h3 {
+  text-align:center;
+}
+
+.info table {
+	font-size:14pt;
+}
+
+.info table th {
+  text-align: right;
+  font-weight:normal;
+  font-style:italic;
+}
+
+.info table td {
+  padding:0 2em;
+}
+
+.link {
+	text-decoration:none;
+	color:#4f7165;
+}

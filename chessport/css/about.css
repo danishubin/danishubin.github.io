@@ -1,0 +1,13 @@
+.main img {
+    position: sticky;
+    top: 10px;
+    height: 100vh;
+}
+
+.main .row div {
+    margin-top: 10px;
+}
+
+.main .row div .header {
+    margin: 10px;
+}

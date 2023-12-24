@@ -1,0 +1,10 @@
+.main div img {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.main div div {
+    text-align: center;
+    padding: 10px;
+}

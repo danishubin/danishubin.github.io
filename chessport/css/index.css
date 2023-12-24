@@ -1,0 +1,32 @@
+.main a {
+    color: #4f7165;
+    text-decoration: none;
+    font-size: 18.67px;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.bottom .row .col-md-4 div {
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bottom .row .col-md-4 div h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bottom .row .col-md-4 div li {
+    color: #4f7165;
+}

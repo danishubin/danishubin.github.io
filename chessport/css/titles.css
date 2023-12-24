@@ -1,0 +1,40 @@
+table.timeline,
+table.timeline tr,
+table.timeline td {
+    border-style: none;
+    border-width: 0px;
+}
+
+table.timeline td:first-child {
+    border-right: solid 3px black;
+}
+
+table.timeline td {
+    width: 50%;
+}
+
+.timeline tr .data-left,
+.timeline tr .data-right {
+    background-color: #ccc;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.timeline tr .data-left {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.timeline tr .data-right {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.timeline tr .data-left p,
+.timeline tr .data-right p,
+.timeline tr .data-left h4,
+.timeline tr .data-right h4 {
+    padding: 20px;
+    color: black;
+}

@@ -1,0 +1,35 @@
+.accordion {
+    width: 100%;
+}
+
+.accordion,
+.accordion-item,
+.accordion-header,
+.accordion-header .btn,
+.accordion-header .btn:hover {
+    color: black;
+    background-color: #ccc;
+    text-align: left;
+}
+
+.accordion-header {
+    padding: 10px;
+}
+
+.accordion-header .btn {
+    width: 100%;
+    text-align: left;
+    border-radius: 0%;
+    border-color: white;
+    border-style: dotted;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+.accordion-body {
+    padding: 5px 10px;
+}
+
+.accordion-body p {
+    margin: 0;
+}

@@ -1,0 +1,19 @@
+.gallery {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.image {
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.image img {
+    height: 300px;
+}

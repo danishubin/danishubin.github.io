@@ -1,0 +1,24 @@
+.reccomendations .col-md-3 div {
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.reccomendations {
+    margin-top: 10px;
+}
+
+.title {
+    margin: 30px;
+    text-align: center;
+}
+
+.profiles {
+    text-align: center;
+}
+
+@media (max-width: 770px) {
+    .reccomendations div {
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,22 @@
+.class-info {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    height: 300px;
+}
+
+.class-info::-webkit-scrollbar {
+    display: none;
+}
+
+.info {
+    display: inline-block;
+    padding: 40px;
+    width: 700px;
+    height: 100%;
+    background-color: #ccc;
+    white-space: normal;
+    vertical-align: top;
+    border-radius: 10px;
+}
