@@ -7,39 +7,190 @@
     <title>Happy Birthday</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
     <link rel="stylesheet" href="css/piano.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/todo.css">
 </head>
 
 <body>
     <div class="fluffy">
         <div class="row">
-            <div class="col-md-10" style="margin: auto; text-align: center;">
-                <img src="images/HedwigTheme.JPG" alt="Piano Notes" style="width: 50%;">
+            <div class="col-md-3">
+                <h1 class="title" style="color: black;">
+                    "That Thing Has A Name?"
+                </h1>
+            </div>
+            <div class="col-md-9">
+                <div class="music">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/HedwigTheme.JPG" alt="Piano Notes" style="width: 50%; text-align: center;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul id="keyboard">
+                                <li note="C" class="white">A</li>
+                                <li note="C#" class="black">W</li>
+                                <li note="D" class="white offset">S</li>
+                                <li note="D#" class="black">E</li>
+                                <li note="E" class="white offset">D</li>
+                                <li note="F" class="white">F</li>
+                                <li note="F#" class="black">T</li>
+                                <li note="G" class="white offset">G</li>
+                                <li note="G#" class="black">Y</li>
+                                <li note="A" class="white offset">H</li>
+                                <li note="A#" class="black">U</li>
+                                <li note="B" class="white offset">J</li>
+                                <li note="C2" class="white">K</li>
+                                <li note="C#2" class="black">O</li>
+                                <li note="D2" class="white offset">L</li>
+                                <li note="D#2" class="black">P</li>
+                                <li note="E2" class="white offset">;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="priorities">
         <div class="row">
-            <div class="col-md-12" style="margin: auto; text-align: center; justify-content: center; position: absolute;">
-                <ul id="keyboard">
-                    <li note="C" class="white">A</li>
-                    <li note="C#" class="black">W</li>
-                    <li note="D" class="white offset">S</li>
-                    <li note="D#" class="black">E</li>
-                    <li note="E" class="white offset">D</li>
-                    <li note="F" class="white">F</li>
-                    <li note="F#" class="black">T</li>
-                    <li note="G" class="white offset">G</li>
-                    <li note="G#" class="black">Y</li>
-                    <li note="A" class="white offset">H</li>
-                    <li note="A#" class="black">U</li>
-                    <li note="B" class="white offset">J</li>
-                    <li note="C2" class="white">K</li>
-                    <li note="C#2" class="black">O</li>
-                    <li note="D2" class="white offset">L</li>
-                    <li note="D#2" class="black">P</li>
-                    <li note="E2" class="white offset">;</li>
-                </ul>
+            <div class="col-md-5">
+                <h1 class="title" style="color: black;">
+                    "I'm going to bed before either of you you come up with another clever idea to get us killed. Or worse, expelled".
+                </h1>
             </div>
+            <div class="col-md-7">
+                <div class="todo">
+                    <ul class="sortable-list">
+                        <li class="item" draggable="true">
+                            <div class="details">
+                                <span>death</span>
+                            </div>
+                            <i class="uil uil-draggabledots"></i>
+                        </li>
+                        <li class="item" draggable="true">
+                            <div class="details">
+                                <span>expelled</span>
+                            </div>
+                            <i class="uil uil-draggabledots"></i>
+                        </li>
+                        <li class="item" draggable="true">
+                            <div class="details">
+                                <span>hw late</span>
+                            </div>
+                            <i class="uil uil-draggabledots"></i>
+                        </li>
+                        <li class="item" draggable="true">
+                            <div class="details">
+                                <span>dental stitches</span>
+                            </div>
+                            <i class="uil uil-draggabledots"></i>
+                        </li>
+                        <li class="item" draggable="true">
+                            <div class="details">
+                                <span>not reading the potion instructions</span>
+                            </div>
+                            <i class="uil uil-draggabledots"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="plants">
+        <div class="row">
+            <div class="col-md-3">
+                <h1 class="title" style="color: white; position: absolute; width: 30%;">
+                    "He's not relaxing is he???"
+                </h1>
+            </div>
+        </div>
+        <img src="images/vines.jpg" alt="Devil's Snare" style="width: 100%; height: 100%; position: absolute;">
+        <div class="light"></div>
+        <div id="leaves">
+
+        </div>
+    </div>
+    <div class="row orc2">
+        <div class="row">
+            <div class="col-md-3">
+                <h1 class="title" style="color: black;">
+                    "The age of men is over. The time of the orcs has come"
+                </h1>
+            </div>
+            <div class="col-md-9" style="height: 100vh; padding: 5% 0%;">
+                <div class="comparison" style="justify-content: center; height: 100%;">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/aragorn.png" alt="Aragorn" style="height: 200px;">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1" style="height: 200px; margin: auto; justify-content: center; align-items: center; padding: 60px 0;">
+                            <p>age:</p>
+                            <p id="aragornAge"></p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="slidecontainer" style="height: 100%; text-align: left;">
+                                <input type="range" min="0" max="100" value="50" class="slider" id="aragorn" style="height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/orc.png" alt="Orc" style="height: 200px;">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1" style="height: 200px; margin: auto; justify-content: center; align-items: center; padding: 60px 0;">
+                            <p>age:</p>
+                            <p id="orcAge"></p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="slidecontainer" style="height: 100%; text-align: left;">
+                                <input type="range" min="0" max="100" value="50" class="slider" id="orc" style="height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="row final" style="height: 100vh; margin: auto;">
+            <div class="col-md-6" style="margin: auto;">
+                <img src="images/ravenclaw.jpg" alt="" style="margin: auto; width: 80%;">
+            </div>
+            <div class="col-md-6">
+                <textarea id="finalInput" rows="2" cols="50" style="width: 80%; height: 300px; font-size:xx-large; text-align: center;"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="header">
+            <h1>"Neta?? Vita??" - said alla Frodo </h1>
+            <p>Happy Birthday Vita and Neta!
+                <audio id="sound1" src="images/LOTRsound.mp3" preload="auto"></audio>
+                <button onclick="document.getElementById('sound1').play();">
+                    Play Sound
+                </button>
+            </p>
+        </div>
+        <div class="container">
+            <video controls>
+                <source src="images/NetaLaugh.mp4">
+            </video>
+            <img src="images/vitaWhistle.jpg" alt="">
+            <img src="images/NetaRome.jpg" alt="">
+            <img src="images/netaCold.jpg" alt="">
+            <img src="images/netaPhone.jpg" alt="">
+            <img src="images/vitaFocused.jpg" alt="">
+            <img src="images/VitaMason.mp4" alt="">
+            <video controls>
+                <source src="images/VitaMason.mp4">
+            </video>
+            <img src="images/beattles.jpg" alt="">
         </div>
     </div>
 </body>
