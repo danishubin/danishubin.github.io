@@ -186,8 +186,8 @@ document.addEventListener("mouseup", () => {
 }, { signal });
 
 function passFluffy(key) {
-    // const notes = ["D", "H", "K", "J", "H", "semicolon", "L", "J", "H", "K", "J", "G", "U", "D", "D"];
-    const notes = ["D"];
+    const notes = ["D", "H", "K", "J", "H", "semicolon", "L", "J", "H", "K", "J", "G", "U", "D", "D"];
+    // const notes = ["D"];
     if (index < notes.length) {
         if (key == notes[index]) {
             index++;
