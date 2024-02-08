@@ -1,0 +1,97 @@
+.container {
+    height: 100vh;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.left {
+    float: left;
+    height: 100%;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.left a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    float: left;
+    width: 80%;
+}
+
+.buttons {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+}
+
+.family {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 2%;
+    padding: 10px;
+}
+
+.family:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.main {
+    height: 100%;
+    width: 75%;
+    float: left;
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .left {
+        width: 30%;
+        height: 190vh;
+    }
+    .content {
+        width: 70%;
+    }
+    .buttons {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:620px) {
+    .left {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+    .left a {
+        display: inline;
+        padding: 0 5px;
+    }
+    .content {
+        width: 100%;
+    }
+    .buttons {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+    }
+}

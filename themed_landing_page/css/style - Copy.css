@@ -1,0 +1,237 @@
+    body {
+        overflow: hidden;
+        background-color: rgb(4, 4, 28);
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: bubblegum-pop-highlight, sans-serif;
+        font-style: normal;
+    }
+    
+    p {
+        font-family: krok, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .santa {
+        position: absolute;
+        left: -30%;
+        top: 20%;
+        height: 100px;
+        animation-name: ride;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        z-index: 1;
+    }
+    
+    .light {
+        position: absolute;
+        height: 150px;
+        width: 40px;
+        left: 10%;
+        top: calc(100% - 150px);
+        z-index: 1;
+    }
+    
+    .shadow {
+        position: absolute;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        background-color: orange;
+        opacity: 0.3;
+        border-radius: 50%;
+        height: 30px;
+        box-shadow: 0px 0px 5px 1px orange;
+        animation-name: glow;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes glow {
+        0% {
+            width: 80%;
+        }
+        25% {
+            width: 85%;
+        }
+        50% {
+            width: 90%;
+        }
+        75% {
+            width: 95%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    
+    .lamp {
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    .title {
+        position: absolute;
+        margin: 5% auto auto auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+        width: 50vw;
+        height: 50vh;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .title h1 {
+        margin: auto;
+        color: red;
+        font-size: 20vh;
+    }
+    
+    .title p {
+        margin: auto;
+        color: red;
+    }
+    
+    .title button {
+        background-color: forestgreen;
+        border-radius: 10%;
+        margin: auto;
+        padding: 5px 10px;
+    }
+    
+    button:hover {
+        background-color: rgb(25, 114, 25);
+    }
+    
+    @keyframes ride {
+        0% {
+            left: -30%;
+            top: 20%;
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(10deg);
+        }
+        20% {
+            top: 30%;
+            transform: rotate(0deg);
+        }
+        30% {
+            transform: rotate(-10deg);
+        }
+        40% {
+            top: 20%;
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+        60% {
+            top: 30%;
+            transform: rotate(0deg);
+        }
+        70% {
+            transform: rotate(-10deg);
+        }
+        80% {
+            top: 20%;
+            transform: rotate(0deg);
+        }
+        90% {
+            transform: rotate(10deg);
+        }
+        100% {
+            left: 100vw;
+            top: 30%;
+            transform: rotate(10deg);
+        }
+    }
+    
+    .hillleft {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        top: 85vh;
+        left: -10%;
+        border-radius: 50%;
+        background-color: white;
+    }
+    
+    .benchgift {
+        position: absolute;
+        top: -40px;
+        left: calc(50% - 50px);
+    }
+    
+    .bench {
+        height: 40px;
+    }
+    
+    .gift {
+        height: 40px;
+    }
+    
+    .hillright {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        top: 90vh;
+        right: -10%;
+        border-radius: 50%;
+        background-color: white;
+    }
+    /* Snowflake effect from: https://www.kirupa.com/html5/the_falling_snow_effect.htm */
+    
+    #snowflakeContainer {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: none;
+    }
+    
+    .snowflake {
+        position: fixed;
+        background-color: #FFFFFF;
+        user-select: none;
+        pointer-events: none;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+    }
+    
+    @media (max-width: 800px) {
+        .title {
+            margin: auto;
+        }
+        .title h1 {
+            font-size: 10vh;
+        }
+        .light {
+            padding-top: 20px;
+        }
+        .lamp,
+        .light,
+        .bench,
+        .gift {
+            display: none;
+        }
+    }

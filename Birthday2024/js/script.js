@@ -280,7 +280,7 @@ function devilSnare() {
             interval = setInterval(function() {
                 growLight(positionX, positionY)
             }, 10)
-        }, 5000);
+        }, 10000);
     }, { signal2 });
 }
 

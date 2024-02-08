@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammamish Remodeling</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+    <!-- Reference for Before/After image: https://orangeable.com/css/before-and-after-image-slider -->
+    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel" style="width: 800px; height:530px; margin: auto;">
+        <input type="range" class="slider" id="divide" min="1" max="100" value="50" />
+        <div id="slider-button"></div>
+        <div class="carousel-inner">
+            <div class="content carousel-item active" style="margin: auto;">
+                <div class="image before" style="background-image: url(images/Before\ 1.PNG);"></div>
+                <div class="image after" style="background-image: url(images/After\ 1.PNG);;"></div>
+            </div>
+            <div class="content carousel-item " style="margin: auto;">
+                <div class="image before" style="background-image: url(images/Before\ 1.PNG);"></div>
+                <div class="image after" style="background-image: url(images/After\ 1.PNG);;"></div>
+            </div>
+            <div class="content carousel-item " style="margin: auto;">
+                <div class="image before" style="background-image: url(images/Before\ 1.PNG);"></div>
+                <div class="image after" style="background-image: url(images/After\ 1.PNG);;"></div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+<script src="js/gallery.js"></script>
+
+</html>

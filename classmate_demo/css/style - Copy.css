@@ -1,0 +1,15 @@
+.contain {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    background-color: blue;
+    color: white;
+}
+
+button {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
