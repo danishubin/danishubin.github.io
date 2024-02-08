@@ -355,7 +355,7 @@ function final() {
     var newLine = 0;
     inputFinal = document.getElementById("finalInput");
     inputFinal.oninput = function() {
-        if (inputFinal.value == "if you ask youll never know if you know you need but ask") {
+        if (inputFinal.value == "if you ask youll never know if you know you need only ask") {
             document.getElementsByClassName('final')[0].style.display = "none";
             document.getElementsByClassName('gallery')[0].style.display = "unset";
             return;
