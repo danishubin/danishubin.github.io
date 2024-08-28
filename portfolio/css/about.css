@@ -12,19 +12,21 @@ body,
     padding: 0;
 }
 
-.about {
+/* .about {
     top: calc(0% + 150px);
     position: relative;
     height: 100vh;
-}
+} */
 
 .about .text {
-    position: absolute;
-    left: calc(30%);
-    top: calc(50% - 250px);
+    /* position: absolute; */
+    /* left: calc(30%);
+    top: calc(50% - 250px); */
     width: 40%;
     text-align: center;
     z-index: 2;
+    margin: auto;
+
 }
 
 .about .text h4 {
