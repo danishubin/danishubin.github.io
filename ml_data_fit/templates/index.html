@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Prediction Carousel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Custom color for previous arrow */
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M4.5 0L3.5 1 6.5 4 3.5 7l1 1 4-4-4-4z'/%3E%3C/svg%3E");
+            rotate: 180deg;
+        }
+
+        /* Custom color for next arrow */
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M3.5 0L2.5 1 5.5 4 2.5 7l1 1 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+
+        /* Position arrows on far edges of the screen */
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;  /* Adjust width as needed */
+        }
+
+        .carousel-control-prev {
+            left: -50px;   /* Position left arrow at far left */
+            position: absolute;
+        }
+
+        .carousel-control-next {
+            right: -50px;  /* Position right arrow at far right */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Bootstrap Carousel -->
+    <div class="Data" style="margin: auto; width: 60%; height: 70vh;">
+        <div id="predictionCarousel" class="carousel slide" data-interval="false" data-ride="carousel" data-pause="hover">
+            <div class="carousel-inner">
+                <!-- Instruction Slide -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 400px;">
+                        <div class="text-center">
+                            <h3>Welcome to the AI Data Prediction Carousel</h3>
+                            <p>AI trending refers to the ability of artificial intelligence models to analyze historical data and identify patterns or trends that can help predict future outcomes. These models are trained to recognize different types of relationships within the data, whether it’s linear growth, periodic fluctuations, or more complex patterns. In this carousel, users will interact with several AI models that predict data trends based on square footage and its relationship to price. To use the carousel, simply select a model, input the square footage, and click the "Predict Price" button. The AI will analyze the data and provide a predicted price based on the chosen model. Each slide represents a different model: linear, quadratic, cubic, exponential, and sinusoidal—each suited for various types of data trends. The goal is to help users understand how AI can analyze and predict based on past data trends, making it easier to estimate future values.</p>
+                            <p>*Note: the data shown have no significant meeting and are merely chosen to show relationships</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linear Model Slide -->
+                <div class="carousel-item">
+                    <img src="data:image/png;base64,{{ plots['linear'] }}" class="d-block w-100" alt="Linear Model">
+                    <div class="text-center mt-3">
+                        <div class="row">
+                            <div class="col-md-4">                    
+                                <p><strong>Enter the square footage:</strong></p>
+                            </div>
+                            <div class="col-md-4">                    
+                                <input type="number" id="squareFootage_linear" placeholder="Square Footage" class="form-control mb-3">
+                            </div>
+                            <div class="col-md-4">                    
+                                <button onclick="makePrediction('linear')" class="btn btn-primary mb-3">Predict Price</button>
+                            </div>
+                        </div>
+                        <p class="result-linear fw-bold"></p>  <!-- Unique class for linear model -->
+                    </div>
+                </div>
+
+                <!-- Quadratic Model Slide -->
+                <div class="carousel-item">
+                    <img src="data:image/png;base64,{{ plots['quadratic'] }}" class="d-block w-100" alt="Quadratic Model">
+                    <div class="text-center mt-3">
+                        <div class="row">
+                            <div class="col-md-4">                    
+                                <p><strong>Enter the square footage:</strong></p>
+                            </div>
+                            <div class="col-md-4">                    
+                                <input type="number" id="squareFootage_quadratic" placeholder="Square Footage" class="form-control mb-3">
+                            </div>
+                            <div class="col-md-4">                    
+                                <button onclick="makePrediction('quadratic')" class="btn btn-primary mb-3">Predict Price</button>
+                            </div>
+                        </div>
+                        <p class="result-quadratic fw-bold"></p> <!-- Unique class for quadratic model -->
+                    </div>
+                </div>
+
+                <!-- Cubic Model Slide -->
+                <div class="carousel-item">
+                    <img src="data:image/png;base64,{{ plots['cubic'] }}" class="d-block w-100" alt="Cubic Model">
+                    <div class="text-center mt-3">
+                        <div class="row">
+                            <div class="col-md-4">                    
+                                <p><strong>Enter the square footage:</strong></p>
+                            </div>
+                            <div class="col-md-4">                    
+                                <input type="number" id="squareFootage_cubic" placeholder="Square Footage" class="form-control mb-3">
+                            </div>
+                            <div class="col-md-4">                    
+                                <button onclick="makePrediction('cubic')" class="btn btn-primary mb-3">Predict Price</button>
+                            </div>
+                        </div>
+                        <p class="result-cubic fw-bold"></p> <!-- Unique class for cubic model -->
+                    </div>
+                </div>
+
+                <!-- Exponential Model Slide -->
+                <div class="carousel-item">
+                    <img src="data:image/png;base64,{{ plots['exponential'] }}" class="d-block w-100" alt="Exponential Model">
+                    <div class="text-center mt-3">
+                        <div class="row">
+                            <div class="col-md-4">                    
+                                <p><strong>Enter the square footage:</strong></p>
+                            </div>
+                            <div class="col-md-4">                    
+                                <input type="number" id="squareFootage_exponential" placeholder="Square Footage" class="form-control mb-3">
+                            </div>
+                            <div class="col-md-4">                    
+                                <button onclick="makePrediction('exponential')" class="btn btn-primary mb-3">Predict Price</button>
+                            </div>
+                        </div>
+                        <p class="result-exponential fw-bold"></p> <!-- Unique class for exponential model -->
+                    </div>
+                </div>
+
+                <!-- Sinusoidal Model Slide -->
+                <div class="carousel-item">
+                    <img src="data:image/png;base64,{{ plots['sinusoidal'] }}" class="d-block w-100" alt="Sinusoidal Model">
+                    <div class="text-center mt-3">
+                        <div class="row">
+                            <div class="col-md-4">                    
+                                <p><strong>Enter the square footage:</strong></p>
+                            </div>
+                            <div class="col-md-4">                    
+                                <input type="number" id="squareFootage_sinusoidal" placeholder="Square Footage" class="form-control mb-3">
+                            </div>
+                            <div class="col-md-4">                    
+                                <button onclick="makePrediction('sinusoidal')" class="btn btn-primary mb-3">Predict Price</button>
+                            </div>
+                        </div>
+                        <p class="result-sinusoidal fw-bold"></p> <!-- Unique class for sinusoidal model -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and Right Controls -->
+            <a class="carousel-control-prev" href="#predictionCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#predictionCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function makePrediction(modelType) {
+        const squareFootage = document.getElementById("squareFootage_"+modelType).value;
+        console.log(`Prediction for model ${modelType} started`);
+        
+        const response = await fetch("/predict", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ square_footage: squareFootage, model_type: modelType }),
+        });
+
+        const data = await response.json();
+
+        // Use the modelType to dynamically select the correct result element
+        document.querySelector(`.result-${modelType}`).innerText = 
+            `Predicted Price using ${modelType} model and with your input: $${data.predicted_price.toFixed(2)}`;
+    }
+</script>
+
+<!-- Bootstrap and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
