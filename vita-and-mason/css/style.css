@@ -232,6 +232,7 @@ div.day {
 @media (max-width: 768px) {
     .schedule {
         flex-direction: column; /* Stack events vertically */
+        width: 100%;
     }
     .schedule .event {
         flex: 1 1 100%; /* Full width for each event */
