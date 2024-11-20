@@ -6,7 +6,80 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4 {
+/* Hamburger button */
+.hamburger-btn {
+    /* font-size: 24px; */
+    background: rgb(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    border-radius: 8px;
+}
+
+/* Side menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s; /* Smooth sliding effect */
+    padding-top: 60px;
+    z-index: 100;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.side-menu ul li a {
+    color: #b77e1c;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.side-menu ul li a:hover {
+    background-color: #e4b35d;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+/* Close button */
+.close-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #b77e1c;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Active menu class */
+.side-menu.active {
+    left: 0; /* Slide into view */
+}
+
+h1 {
+    font-style: italic;
+}
+
+h1, h2, h3, h4, li a {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -20,13 +93,24 @@ p {
     font-style: normal;
 }
 
-  
-.row {
+.cover {
     height: 100vh;
+    width: 100vw;
+}
+
+.row {
     width: 100vw;
     margin: 0;
     padding: 0;
 }
+
+  
+/* .row {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+} */
 
 .cover {
     background: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust the opacity as needed */
@@ -58,28 +142,108 @@ div.center {
     color: black;
 }
 
+.date {
+    padding: 10px;
+    background-color:rgb(221, 239, 255);
+    margin: auto;
+    border-radius: 5px;
+    width: 80vw;
+    margin-top: 20px;
+}
+
 .date div {
     margin: auto;
 }
 
-.date div img, .schedule div img {
-    height: 70vh;
+.date div img {
+    height: 60vh;
+    width: auto;
 }
 
 div.day {
     border-top: 1px black solid ;
 }
 
-.border {
-    position: absolute;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background: 
-        white, /* The inner content background */
-        url('your-floral-image.png') repeat; /* The repeating floral image */
-    /* background-origin: border-box; Ensures the floral image is only on the padding/border */
-    /* background-clip: border-box, padding-box; */
-    /* background-size: auto; Keeps the floral image in its original size */
-    /* box-sizing: border-box; Ensures the padding doesn't affect the width/height */
+
+/* Schedule */
+
+.schedule {
+    padding: 20px;
+}
+
+.schedule .event .row {
+    border: #b77e1c 1px solid;
+    height: 100%;
+}
+
+.schedule .event .row {
+    width: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.schedule .event div div img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.schedule .event div div a, .schedule .event div div a:hover {
+    color: #b77e1c;
+}
+
+/* FAQ */
+
+.accordion, .accordion-button, .accordion-body {
+    background-color: rgb(221, 239, 255);
+    text-align: left;
+}
+
+/* story */
+
+.story {
+    padding: 20px;
+    color: black;
+    background-color: rgb(221, 239, 255);
+    height: fit-content;
+}
+
+.story div img {
+
+    object-fit: cover;
+    height: 100%;
+    object-position: bottom; /* Ensures the top of the image is prioritized */
+
+}
+
+/* .story .image {
+    background: url("../images/story.jpg") 50% 50%;
+    background-size: cover;
+    height: 100%;
+  } */
+
+.story .image {
+    margin: auto;
+}
+
+.story .image div {
+    height: 100%;
+    margin: auto;
+}
+
+.story .image div img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-position: top; /* Ensures the top of the image is prioritized */
+}
+
+/* tidbits */
+.tidbits {
+    margin: 20px;
+    color: black;
+}
+
+.tidbits .image {
+    margin: auto;
 }
