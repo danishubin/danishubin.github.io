@@ -41,6 +41,6 @@ document.getElementById('codeButton').onclick = function() {
     codeForm.style.display = "none";
     rehearsal.style.display = "flex";
   } else {
-    warning.style.display = "block"
+    warning.style.visibility = "visible";
   }
 };
