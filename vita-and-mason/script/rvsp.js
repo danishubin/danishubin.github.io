@@ -1,5 +1,17 @@
+const code = document.getElementById("code");
+const codeForm = document.getElementById("codeForm");
+const rehearsal= document.getElementById("rehearsal");
+const rehearsalField = document.getElementById("rehearsalField");
+const rvspForm = document.getElementById("rvsp")
+const warning = document.getElementById("warning");
+
 document.getElementById('customForm').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent the form from submitting immediately
+
+  
+  // Show loading screen
+  document.getElementById('loadingScreen').style.display = 'block';
+  rvspForm.style.display = "none";
 
   // Create a new FormData object from the form
   var formData = new FormData(this);
@@ -10,6 +22,9 @@ document.getElementById('customForm').addEventListener('submit', function(event)
       body: formData
   })
   .then(response => {
+      // Hide loading screen
+      document.getElementById('loadingScreen').style.display = 'none';
+
       if (response.ok) {
           // Redirect to a custom page after the form is successfully submitted
           window.location.href = 'success.html';  // Replace with your custom page URL
@@ -20,16 +35,12 @@ document.getElementById('customForm').addEventListener('submit', function(event)
   })
   .catch(error => {
       console.error('Error:', error);
+
+      // Hide loading screen
+      document.getElementById('loadingScreen').style.display = 'none';
       alert('There was an error submitting the form. Please try again.');
   });
 });
-
-const code = document.getElementById("code");
-const codeForm = document.getElementById("codeForm");
-const rehearsal= document.getElementById("rehearsal");
-const rehearsalField = document.getElementById("rehearsalField");
-const rvspForm = document.getElementById("rvsp")
-const warning = document.getElementById("warning");
 
 document.getElementById('codeButton').onclick = function() {
   if (code.value == 1) {
