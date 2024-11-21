@@ -333,3 +333,26 @@ div.day {
     width: 100%;
     object-fit: cover;
 }
+
+.info {
+    color: black;
+    width: 80%;
+    margin: auto;
+    border: #b77e1c 1px solid;
+
+}
+
+.info a, .info a:hover{
+    color: #b77e1c;
+}
+
+.info div {
+    margin: auto;
+    height: 100%;
+    padding: 10px;   
+    height: 250px;
+}
+
+.info h4 {
+    margin-bottom: 30px;
+}
