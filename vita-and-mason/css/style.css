@@ -4,6 +4,7 @@ body {
     overflow-x:hidden;
     color: white;
     text-align: center;
+    min-height: 100vh;
 }
 
 /* Hamburger button */
@@ -52,13 +53,19 @@ body {
     padding: 10px;
 }
 
+.side-menu ul li:has(button) a {
+    color: initial;  /* Reset the color */
+    text-decoration: none;  /* Keep the text-decoration as none or reset */
+    padding: 0;  /* Reset padding */
+}
+
 .side-menu ul li a:hover {
     background-color: #e4b35d;
     transition: 0.3s;
     border-radius: 8px;
 }
 
-.side-menu ul li button, .side-menu ul li button:hover {
+.side-menu ul li button {
     width: 100%;
     color: #b77e1c;
     border-color: #b77e1c;
@@ -344,6 +351,104 @@ div.day {
     margin-bottom: 30px;
 }
 
+/* RVSP */
+
+.rvsp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    color: black;
+    margin: 20px;
+}
+
+.rvsp .row {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+
+form {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+
+input:active {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+form button {
+    width: 50%;
+    color: #b77e1c;
+    border-color: #b77e1c;
+    background-color: #e4b35d;
+    transition: 0.3s;
+}
+
+form button:hover {
+    color: #865b11;
+    border-color: #865b11;
+    background-color: #e4b35d;
+}
+
+.code {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 50%;
+    margin: auto;
+}
+
+.code div input {
+    text-align: center;
+}
+
+.code div button {
+    margin-top: 10px;
+    color: #b77e1c;
+    border-color: #b77e1c;
+    background-color: #e4b35d;
+    transition: 0.3s;
+    color: white;
+}
+
+.code div button:hover {
+    color: #865b11;
+    border-color: #865b11;
+    background-color: #e4b35d;
+}
+
+/* Responsive adjustments for different screen sizes if needed */
+
+.thanks {
+    color: black;
+    margin: auto;
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
@@ -402,5 +507,18 @@ div.day {
     .story div img {
         min-height: 50vh;
     }
+
+    .rvsp {
+        padding: 20px;
+    }
     
+    form {
+        margin: auto;
+        width: 80%;
+        height: 100%;
+    }
+
+    form .row {
+        padding: 20px;
+    }
 }
