@@ -58,6 +58,18 @@ body {
     border-radius: 8px;
 }
 
+.side-menu ul li button, .side-menu ul li button:hover {
+    width: 100%;
+    color: #b77e1c;
+    border-color: #b77e1c;
+}
+
+.side-menu ul li button:hover {
+    color: #865b11;
+    border-color: #865b11;
+    background-color: #e4b35d;
+}
+
 /* Close button */
 .close-btn {
     font-size: 24px;
