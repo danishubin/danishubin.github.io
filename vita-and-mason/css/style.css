@@ -204,6 +204,7 @@ div.day {
     /* white-space: initial; */
     white-space: nowrap;
     flex: 0 0 auto; /* Prevent columns from shrinking */
+    min-width: none;
 }
 
 .schedule .event .row .col-md-8 {
@@ -228,39 +229,6 @@ div.day {
     color: #b77e1c;
 }
 
-/* Responsive layout for smaller screens */
-@media (max-width: 768px) {
-    .schedule {
-        flex-direction: column; /* Stack events vertically */
-        width: 100%;
-    }
-    .schedule .event {
-        flex: 1 1 100%; /* Full width for each event */
-        flex-direction: column; /* Stack image and text vertically */
-        margin-top: 10px;
-    }
-    .schedule .event .row {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center;
-    }
-    .schedule .event .row .col-md-4 {
-        flex: 0 0 auto; /* Adjust image dimensions */
-        width: 100%;
-        height: auto;
-    }
-    .schedule .event div div img {
-        width: 100%; /* Full width image */
-        height: 50vh;
-        margin-bottom: 10px;
-        object-position: top;
-    }
-    .schedule .event .row .col-md-8 {
-        flex: 1;
-        text-align: center; /* Optional: Center-align text for smaller screens */
-        padding: 10px 0;
-    }
-}
-
 /* FAQ */
 
 .accordion, .accordion-button, .accordion-body {
@@ -274,10 +242,15 @@ div.day {
 
 /* story */
 
+.story-background {
+    background-color: rgb(221, 239, 255);
+}
+
 .story {
     color: black;
-    background-color: rgb(221, 239, 255);
     height: fit-content;
+    width: 80%;
+    margin: auto;
 }
 
 .story div {
@@ -287,7 +260,7 @@ div.day {
 .story div img {
 
     object-fit: cover;
-    height: 100%;
+    min-height: 100vh;
     object-position: bottom; /* Ensures the top of the image is prioritized */
 
 }
@@ -350,9 +323,70 @@ div.day {
     margin: auto;
     height: 100%;
     padding: 10px;   
-    height: 250px;
+    /* height: 250px; */
 }
 
 .info h4 {
     margin-bottom: 30px;
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .schedule {
+        flex-direction: column; /* Stack events vertically */
+        width: 100%;
+    }
+    .schedule .event {
+        flex: 1 1 100%; /* Full width for each event */
+        flex-direction: column; /* Stack image and text vertically */
+        margin-top: 10px;
+    }
+    .schedule .event .row {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+    }
+    .schedule .event .row .col-md-4 {
+        flex: 0 0 auto; /* Adjust image dimensions */
+        width: 100%;
+        height: auto;
+    }
+    .schedule .event div div img {
+        width: 100%; /* Full width image */
+        height: 50vh;
+        margin-bottom: 10px;
+        object-position: top;
+    }
+    .schedule .event .row .col-md-8 {
+        flex: 1;
+        text-align: center; /* Optional: Center-align text for smaller screens */
+        padding: 10px 0;
+    }
+
+    .schedule .event .row {
+        border-top: #b77e1c 1px solid;
+        border-bottom: #b77e1c 1px solid;
+        border-left: none;
+        border-right: none;
+    }
+
+    
+    .info {
+        border-top: #b77e1c 1px solid;
+        border-bottom: #b77e1c 1px solid;
+        border-left: none;
+        border-right: none; 
+    } 
+
+    .info div {
+        margin: auto;
+        height: 100%;
+        padding: 10px;   
+        height: auto;
+    }
+
+    .story div img {
+        min-height: 50vh;
+    }
+    
 }
