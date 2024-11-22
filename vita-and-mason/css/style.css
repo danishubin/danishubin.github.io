@@ -434,7 +434,27 @@ form button:hover {
     background-color: #e4b35d;
 }
 
+
+.options {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
+    justify-content: center; /* Centers the buttons horizontally */
+  }
+  
+  .options button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    height: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .options button:hover {
+    background-color: #ddd;
+  }
 /* Responsive adjustments for different screen sizes if needed */
+
 
 .thanks {
     color: black;

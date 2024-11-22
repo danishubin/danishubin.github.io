@@ -55,3 +55,76 @@ document.getElementById('codeButton').onclick = function() {
     warning.style.visibility = "visible";
   }
 };
+
+
+function setValueRF(value) {
+  document.getElementById('rehearsalField').value = value;
+  yesButton = document.getElementById("yesButtonRF")
+  noButton = document.getElementById("noButtonRF")
+    // Change background color of selected button
+    if (value === 'Yes') {
+      yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes
+      noButton.style.backgroundColor = '#f9f9f9'
+      noButton.style.color = "black";
+      yesButton.style.color = "white";
+    } else {
+      noButton.style.backgroundColor = '#b77e1c'; // Change color for No
+      yesButton.style.backgroundColor = '#f9f9f9'
+      yesButton.style.color = "black";
+      noButton.style.color = "white";
+    }
+}
+
+function setValueCeremony(value) {
+  document.getElementById('ceremonyField').value = value;
+  yesButton = document.getElementById("yesButtonCeremony")
+  noButton = document.getElementById("noButtonCeremony")
+    // Change background color of selected button
+    if (value === 'Yes') {
+      yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes
+      noButton.style.backgroundColor = '#f9f9f9'
+      noButton.style.color = "black";
+      yesButton.style.color = "white";
+    } else {
+      noButton.style.backgroundColor = '#b77e1c'; // Change color for No
+      yesButton.style.backgroundColor = '#f9f9f9'
+      yesButton.style.color = "black";
+      noButton.style.color = "white";
+    }
+}
+
+function setValueBeach(value) {
+  document.getElementById('beachField').value = value;
+  yesButton = document.getElementById("yesButtonBeach")
+  noButton = document.getElementById("noButtonBeach")
+    // Change background color of selected button
+    if (value === 'Yes') {
+      yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes
+      noButton.style.backgroundColor = '#f9f9f9'
+      noButton.style.color = "black";
+      yesButton.style.color = "white";
+    } else {
+      noButton.style.backgroundColor = '#b77e1c'; // Change color for No
+      yesButton.style.backgroundColor = '#f9f9f9'
+      yesButton.style.color = "black";
+      noButton.style.color = "white";
+    }
+}
+
+function setValueShuttle(value) {
+  document.getElementById('shuttleField').value = value;
+  yesButton = document.getElementById("yesButtonShuttle")
+  noButton = document.getElementById("noButtonShuttle")
+    // Change background color of selected button
+    if (value === 'Yes') {
+      yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes
+      noButton.style.backgroundColor = '#f9f9f9'
+      noButton.style.color = "black";
+      yesButton.style.color = "white";
+    } else {
+      noButton.style.backgroundColor = '#b77e1c'; // Change color for No
+      yesButton.style.backgroundColor = '#f9f9f9'
+      yesButton.style.color = "black";
+      noButton.style.color = "white";
+    }
+}
