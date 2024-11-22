@@ -442,11 +442,30 @@ form button:hover {
 }
 
 .thanks {
+    flex-direction: column; /* Stack children vertically */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh;
+    width: 60%;
+}
+
+.thank div {
+    width: 100%;
+}
+
+.thanks a button {
+    color: #b77e1c;
+    border-color: #b77e1c;
+    background-color: #e4b35d;
+    transition: 0.3s;
+}
+
+.thanks a button:hover {
+    color: #865b11;
+    border-color: #865b11;
+    background-color: #e4b35d;
 }
 
 #loadingScreen {
