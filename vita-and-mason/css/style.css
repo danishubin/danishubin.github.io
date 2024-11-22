@@ -426,6 +426,11 @@ form button:hover {
     background-color: #e4b35d;
     transition: 0.3s;
     color: white;
+    height: 40px;
+}
+
+.code div button p {
+    margin: auto;
 }
 
 .code div button:hover {
@@ -433,6 +438,13 @@ form button:hover {
     border-color: #865b11;
     background-color: #e4b35d;
 }
+
+.rvsp .submit-button {
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
 
 
 .options {
