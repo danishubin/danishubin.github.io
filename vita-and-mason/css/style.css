@@ -138,7 +138,7 @@ p {
 } */
 
 .cover {
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust the opacity as needed */
+    background: rgba(0, 0, 0, 0.15); /* Dark overlay, adjust the opacity as needed */
 }
 
 
