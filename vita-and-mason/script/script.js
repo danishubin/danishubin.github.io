@@ -26,6 +26,13 @@ document.addEventListener('click', (e) => {
     }
 });
 
+
+const li = document.getElementById("selectionClose");
+li.addEventListener('click', () => {
+    sideMenu.classList.remove('active');
+    hamburgerBtn.style.zIndex = "1";
+});
+
 // Prevent clicks inside the menu from propagating to the document
 sideMenu.addEventListener('click', (e) => {
     e.stopPropagation();
