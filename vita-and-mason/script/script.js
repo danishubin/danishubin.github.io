@@ -30,3 +30,33 @@ document.addEventListener('click', (e) => {
 sideMenu.addEventListener('click', (e) => {
     e.stopPropagation();
 });
+
+let code = (document.URL.split('?'))
+urlMenu = document.getElementById("ParamURLMenu");
+urlCover = document.getElementById("ParamURLCover");
+rehearsalSchedule = document.getElementById("rehearsalSchedule");
+rehearsalSchedule.display = "none";
+
+
+if (code == document.URL) {
+    urlMenu.href = "login.html";
+    urlCover.href = "login.html";
+    rehearsalSchedule.display = "none";
+}
+
+else {
+    code = code[1].split("=")[1].split("#")[0];
+
+    urlMenu.href = "rvsp.html?code="+code;
+
+    urlCover.href = "rvsp.html?code="+code;
+
+    if (code != 2) {
+        rehearsalSchedule.display = "none";
+    }
+}
+
+// for (let url in urls) {
+//     console.log(urls)
+//     url[0].href = "rvsp.html?code=1";
+// }

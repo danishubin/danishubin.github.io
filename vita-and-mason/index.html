@@ -25,7 +25,7 @@
             <li><a href="#info">Accomodations + Transport</a></li>
             <li><a href="#registry">Registry</a></li>
             <li><a href="#QA">FAQ</a></li>
-            <li style="margin-top: 10px;"><a href="rvsp.html"><button type="button" class="btn btn-outline-light">RVSP</button></a>
+            <li style="margin-top: 10px;"><a href="#" id="ParamURLMenu"><button type="button" class="btn btn-outline-light">RVSP</button></a>
             </li>
         </ul>
     </nav>
@@ -33,7 +33,7 @@
         <div class="center">
             <h1 class="title" style="font-size: 50px;">Vita & Mason</h1>
             <p class="cormorant-text">We can't wait to share this special day with you!</p>
-            <a href="rvsp.html"><button type="button" class="btn btn-outline-light">RVSP</button></a>
+            <a href="#" id="ParamURLCover"><button type="button" class="btn btn-outline-light">RVSP</button></a>
         </div>
         <img src="images/proposal_lisbon.jpg" alt="lisbon">
     </div>
@@ -49,6 +49,10 @@
     </div>
 
     <div class="row schedule flex-nowrap" id="schedule">
+        <div class="arrows">
+          <p><i class="arrow right"></i></p>
+          <p><i class="arrow left"></i></p>
+       </div>
         <div class="event col-md-10">
             <div class="row">
                 <!-- Image Section -->
@@ -101,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="event col-md-10">
+        <div class="event col-md-10" id="rehearsalSchedule">
           <div class="row">
               <!-- Image Section -->
               <div class="col-md-4">
@@ -198,36 +202,38 @@
 
   </div>
 
-  <div class="row info" id="info">
+  <div class="info-background">
+    <div class="row info" id="info">
     
-    <h4 style="margin-top: 10px;">Accomodations + Travel
-    </h4>
-    <div class="col-md-1"></div>
-    <div class="col-md-8 ">
-      <h4>Hotels 🛌</h4>
-      <p>You’ll notice our chosen hotel block is a little distance away from the venue- this is on purpose! 
-        We recommend staying with our block or at the nearby recommended locations! We will have shuttles going from the recommended hotel to the venue and back (please indicate if you’d like a seat on these shuttles in your rsvp), or you are always welcome to drive yourself or call an Uber though expect moderate prices for the distance (we recommend carpooling!)
-        There are hotels near the venue itself, and you are welcome to stay there as well, though all other wedding activities and most tourist locations are NOT near the venue and are instead near our recommended hotels. Thank you!</p>
+      <h4 style="margin-top: 10px;">Accomodations + Travel
+      </h4>
+      <div class="col-md-1"></div>
+      <div class="col-md-8 ">
+        <h4>Hotels 🛌</h4>
+        <p>You’ll notice our chosen hotel block is a little distance away from the venue- this is on purpose! 
+          We recommend staying with our block or at the nearby recommended locations! We will have shuttles going from the recommended hotel to the venue and back (please indicate if you’d like a seat on these shuttles in your rsvp), or you are always welcome to drive yourself or call an Uber though expect moderate prices for the distance (we recommend carpooling!)
+          There are hotels near the venue itself, and you are welcome to stay there as well, though all other wedding activities and most tourist locations are NOT near the venue and are instead near our recommended hotels. Thank you!</p>
+      </div>
+      <div class="col-md-1"></div>
     </div>
-    <div class="col-md-1"></div>
-  </div>
+    
+    <div class="row info" style="margin-top: 10px;">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <h4>Getting In ✈️</h4>
+        <p>We recommend flying into San Diego International Airport (SAN).
   
-  <div class="row info" style="margin-top: 10px;">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <h4>Getting In ✈️</h4>
-      <p>We recommend flying into San Diego International Airport (SAN).
-
-        You can also fly into John Wayne Airport or LAX (Los Angeles Airport), but these will be a much longer drive, especially with traffic, so we highly recommend SAN :)</p>
+          You can also fly into John Wayne Airport or LAX (Los Angeles Airport), but these will be a much longer drive, especially with traffic, so we highly recommend SAN :)</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Uber/Lyft</h4>
+        <p>Ubers and Lyfts are the easiest way to get around San Diego, and there are plenty around!
+  
+          For those who prefer, you can also rent a car from SAN airport</p>
+      </div>
+      <div class="col-md-2"></div>
+  
     </div>
-    <div class="col-md-4">
-      <h4>Uber/Lyft</h4>
-      <p>Ubers and Lyfts are the easiest way to get around San Diego, and there are plenty around!
-
-        For those who prefer, you can also rent a car from SAN airport</p>
-    </div>
-    <div class="col-md-2"></div>
-
   </div>
 
   <div class="row info" id="registry" style="margin-top: 10px;">
@@ -373,14 +379,15 @@
               </button>
             </h2>
             <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Yes! We would love for you to take photos and share them on our app Joy. However, please refrain from taking photos during the ceremony.</div>
+              <div class="accordion-body">Yes! We would love for you to take photos and share them with us. However, please refrain from taking photos during the ceremony.</div>
             </div>
           </div>
         </div>
     </div>      
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="script/countdown.js"></script>
 <script src="script/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="script/schedule.js"></script>
 
 </html>

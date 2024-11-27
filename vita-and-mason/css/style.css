@@ -138,7 +138,7 @@ p {
 } */
 
 .cover {
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust the opacity as needed */
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay, adjust the opacity as needed */
 }
 
 
@@ -172,7 +172,7 @@ div.center {
     background-color:rgb(221, 239, 255);
     margin: auto;
     border-radius: 5px;
-    width: 80vw;
+    width: 100vw;
     margin-top: 20px;
 }
 
@@ -192,6 +192,44 @@ div.day {
 
 /* Schedule */
 
+.arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+
+.arrow {
+    border: solid #b77e1c;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+}
+
+.arrow:hover {
+    border: solid #865b11;
+    border-width: 0 3px 3px 0;
+}
+
+.right {
+    position: absolute;
+    left: calc(92% - 20px);
+    top: calc(50% - 20px);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    position: absolute;
+    left: calc(8% - 20px);
+    top: calc(50% - 20px);
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
 .schedule {
     padding: 20px;
     overflow-x: scroll;
@@ -205,6 +243,11 @@ div.day {
     scroll-behavior: smooth;
     width: 80%;
     margin: auto;
+
+    /* drag and scroll */
+    touch-action: none;
+    user-select: none;
+    /* maybe remove scroll-behavior smooth? */
 }
 
 .schedule .event {
@@ -259,6 +302,11 @@ div.day {
 
 .accordion {
     margin-top: 10px;
+    padding: 10px;
+}
+
+.accordion-body {
+    font-style: italic;
 }
 
 /* story */
@@ -334,6 +382,13 @@ div.day {
     margin: auto;
     border: #b77e1c 1px solid;
 
+}
+
+
+.info-background {
+    width: 100vw;
+    background-color: rgb(221, 239, 255);
+    padding: 20px;
 }
 
 .info a, .info a:hover{
