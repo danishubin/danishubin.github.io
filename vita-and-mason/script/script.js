@@ -35,13 +35,12 @@ let code = (document.URL.split('?'))
 urlMenu = document.getElementById("ParamURLMenu");
 urlCover = document.getElementById("ParamURLCover");
 rehearsalSchedule = document.getElementById("rehearsalSchedule");
-rehearsalSchedule.display = "none";
 
 
 if (code == document.URL) {
     urlMenu.href = "login.html";
     urlCover.href = "login.html";
-    rehearsalSchedule.display = "none";
+    rehearsalSchedule.style.display = "none";
 }
 
 else {
@@ -52,7 +51,7 @@ else {
     urlCover.href = "rvsp.html?code="+code;
 
     if (code != 2) {
-        rehearsalSchedule.display = "none";
+        rehearsalSchedule.style.display = "none";
     }
 }
 

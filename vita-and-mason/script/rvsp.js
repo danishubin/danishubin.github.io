@@ -42,7 +42,7 @@ let param = (document.URL.split('?')[1]).split("=")[1];
 
 if (param == 2) {
   rvspForm.style.display = "flex";
-  rehearsal.style.display = "inherit";
+  rehearsal.style.display = "flex";
 } else {
   rvspForm.style.display = "flex";
   rehearsalField.required = false;  // Make it not required

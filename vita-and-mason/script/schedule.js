@@ -3,11 +3,11 @@ var rightArrow = document.getElementsByClassName("right")[0];
 var schedule = document.getElementsByClassName("schedule")[0];
 
 leftArrow.addEventListener("click", function() {
-    schedule.scrollBy(-200, 0);
+    schedule.scrollBy(-500, 0);
 });
 
 rightArrow.addEventListener("click", function() {
-    schedule.scrollBy(200, 0);
+    schedule.scrollBy(500, 0);
 });
 
 // click and drag
