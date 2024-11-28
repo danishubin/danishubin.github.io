@@ -45,8 +45,8 @@ rehearsalSchedule = document.getElementById("rehearsalSchedule");
 
 
 if (code == document.URL) {
-    urlMenu.href = "login.html";
-    urlCover.href = "login.html";
+    urlMenu.href = "rvsp.html?code="+1;
+    urlCover.href = "rvsp.html?code="+1;
     rehearsalSchedule.style.display = "none";
 }
 

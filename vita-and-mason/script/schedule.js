@@ -1,13 +1,13 @@
-var leftArrow = document.getElementsByClassName("left")[0];
-var rightArrow = document.getElementsByClassName("right")[0];
+var leftArrow = document.getElementsByClassName("arrow-left")[0];
+var rightArrow = document.getElementsByClassName("arrow-right")[0];
 var schedule = document.getElementsByClassName("schedule")[0];
 
 leftArrow.addEventListener("click", function() {
-    schedule.scrollBy(-500, 0);
+    schedule.scrollBy(-1000, 0);
 });
 
 rightArrow.addEventListener("click", function() {
-    schedule.scrollBy(500, 0);
+    schedule.scrollBy(1000, 0);
 });
 
 // click and drag
