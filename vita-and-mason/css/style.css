@@ -141,6 +141,7 @@ p {
     background-image: url(../images/proposal_lisbon.jpg);
     background-size: cover;
     background-position: center;
+    transform: scale(1.0);
 }
 
 .cover {
