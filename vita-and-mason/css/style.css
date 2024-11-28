@@ -441,8 +441,6 @@ div.day {
 }
 
 .tidbits .image img {
-    /* height: 100%; */
-    height: 70lvh;
     width: 100%;
     object-fit: cover;
 }
