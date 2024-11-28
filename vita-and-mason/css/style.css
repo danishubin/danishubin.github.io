@@ -141,7 +141,6 @@ p {
     background-image: url(../images/proposal_lisbon.jpg);
     background-size: cover;
     background-position: center;
-    transform: scale(1.0);
 }
 
 .cover {
@@ -173,6 +172,7 @@ div.center {
 div.overlay {
     background: rgba(0, 0, 0, 0.3);
     align-content: center;
+    height: 100lvh;
 }
 
 .date, .schedule {
