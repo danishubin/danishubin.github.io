@@ -46,9 +46,9 @@ rehearsalSchedule = document.getElementById("rehearsalSchedule");
 
 
 if (code == document.URL) {
-    urlMenu.href = "rvsp.html?code="+1;
-    urlCover.href = "rvsp.html?code="+1;
-    urlFooter.href = "rvsp.html?code="+1;
+    urlMenu.href = "rvsp.html?code="+"vitamason";
+    urlCover.href = "rvsp.html?code="+"vitamason";
+    urlFooter.href = "rvsp.html?code="+"vitamason";
     rehearsalSchedule.style.display = "none";
 }
 
@@ -61,7 +61,7 @@ else {
 
     urlFooter.href = "rvsp.html?code="+code;
 
-    if (code != 2) {
+    if (code != "vitamason-rd" || code != "vitamason-rd1") {
         rehearsalSchedule.style.display = "none";
     }
 }

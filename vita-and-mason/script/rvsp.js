@@ -1,3 +1,5 @@
+let code = (document.URL.split('?')[1]).split("=")[1].split("#")[0];
+
 // Get the hamburger and menu elements
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const sideMenu = document.getElementById('side-menu');
@@ -37,16 +39,25 @@ const rehearsal= document.getElementById("rehearsal");
 const rehearsalField = document.getElementById("rehearsalField");
 const rvspForm = document.getElementById("rvsp")
 const warning = document.getElementById("warning");
+const guest = document.getElementById("guest")
+
 
 let param = (document.URL.split('?')[1]).split("=")[1];
 
-if (param == 2) {
-  rvspForm.style.display = "flex";
+if (param == "vitamason-rd") {
   rehearsal.style.display = "flex";
-} else {
-  rvspForm.style.display = "flex";
+} else if (param == "vitamason-1") {
+  guest.style.display = "flex";
+} else if (param == "vitamason-rd1") {
+  guest.style.display = "flex";
+  rehearsal.style.display = "flex";
+}
+
+else {
   rehearsalField.required = false;  // Make it not required
 }
+
+// 
 
 document.getElementById('customForm').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent the form from submitting immediately
@@ -70,7 +81,7 @@ document.getElementById('customForm').addEventListener('submit', function(event)
 
       if (response.ok) {
           // Redirect to a custom page after the form is successfully submitted
-          window.location.href = 'success.html';  // Replace with your custom page URL
+          window.location.href = 'success.html?code='+code;  // Replace with your custom page URL
       } else {
           // Handle the error if the submission fails
           alert('There was an error submitting the form. Please try again.');
@@ -98,8 +109,6 @@ document.getElementById('customForm').addEventListener('submit', function(event)
 //     warning.style.visibility = "visible";
 //   }
 // };
-
-let code = (document.URL.split('?')[1]).split("=")[1].split("#")[0];
 
 document.getElementById("mainLink").href = "index.html?code=" + code +"#main";
 document.getElementById("dateLink").href = "index.html?code=" + code +"#date";
@@ -182,3 +191,21 @@ function setValueShuttle(value) {
       noButton.style.color = "white";
     }
 }
+
+// function setValueGuest(value) {
+//   document.getElementById('guestField').value = value;
+//   yesButton = document.getElementById("yesGuest")
+//   noButton = document.getElementById("noGuest")
+//     // Change background color of selected button
+//     if (value === 'Yes') {
+//       yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes
+//       noButton.style.backgroundColor = '#f9f9f9'
+//       noButton.style.color = "black";
+//       yesButton.style.color = "white";
+//     } else {
+//       noButton.style.backgroundColor = '#b77e1c'; // Change color for No
+//       yesButton.style.backgroundColor = '#f9f9f9'
+//       yesButton.style.color = "black";
+//       noButton.style.color = "white";
+//     }
+// }

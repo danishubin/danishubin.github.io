@@ -539,7 +539,7 @@ input:active {
 
 form button {
     width: 50%;
-    color: #b77e1c;
+    color: black;
     border-color: #b77e1c;
     background-color: #e4b35d;
     transition: 0.3s;
@@ -676,6 +676,20 @@ form button:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+.rvspTitle {
+    /* width: 80%; */
+    margin: auto;
+    border-bottom: #e4b35d 1px solid;
+    margin-bottom: 20px;
+}
+
+.rvspTitle p {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
 
 .footer {
     width: 100vw;

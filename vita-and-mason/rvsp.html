@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- add icon link -->
+    <link style="border-radius: 50%;" rel="icon" href=
+    "images/icon.png"
+            type="image/x-icon" />
 </head>
 <body>
     <div id="loadingScreen" style="display: none;">
@@ -41,11 +45,15 @@
         </div>
     </div> -->
     <!-- Form to send data to Google Sheets -->
-    <div class="rvsp" id="rvsp" style="display: none;">
+    <div class="rvsp" id="rvsp">
         <form 
         method="POST" 
         action="https://script.google.com/macros/s/AKfycbwsH9WRf2ZVbLvcuDVXKvlynk585DOi6n8784qCM-QTmUMwl0nlr65wqqfKHkpnctux/exec" autocomplete="off" id="customForm">
 
+        <div class="rvspTitle">
+            <h4>Vita & Mason RVSP!</h4>
+            <p style="font-style: italic;">*Note: If you need to update your response, please just submit this form once more.</p>
+        </div>
         <div class="row" id="firstName">
             <div class="col-md-6">
                 <p>First Name:</p>
@@ -111,6 +119,18 @@
                     <button type="button" onclick="setValueShuttle('No')" id="noButtonShuttle">No</button>
                 </div>
                 <input type="hidden" name="shuttleBus" id="shuttleField" value="" required>
+                <!-- <input name="shuttleBus" type="text" placeholder="Yes/No" required> -->
+            </div>
+        </div>
+        <div class="row" id="guest" style="display: none;">
+            <div class="col-md-6">
+                <p>Are you planning on bringing a +1? (Leave blank if no)</p>
+            </div>
+            <div class="col-md-6">
+                <div class="options">
+                    <input name="guest" type="text" id="guestField"  placeholder="Guest Full Name">
+                </div>
+                <!-- <input type="hidden" name="guest" id="guestField" value="" required> -->
                 <!-- <input name="shuttleBus" type="text" placeholder="Yes/No" required> -->
             </div>
         </div>
