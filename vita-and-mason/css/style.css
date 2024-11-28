@@ -552,17 +552,37 @@ form button:hover {
 }
 
 .code {
-    color: black;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    width: 50%;
+    width: 100vw;
     margin: auto;
 }
 
+.code .row {
+    margin-top: 10vh;
+}
+
+.code .text {
+    margin: auto;
+    align-items: right;
+    text-align: center;
+    width: 30%;
+    height: 35vh;
+}
+
+.code img {
+    /* position: absolute; */
+    /* z-index: -1; */
+    height: 100vh;
+}
+
 .code div input {
+    border-radius: 20px;
     text-align: center;
 }
 
@@ -574,6 +594,8 @@ form button:hover {
     transition: 0.3s;
     color: white;
     height: 40px;
+    border-radius: 20px;
+    width: 100%;
 }
 
 .code div button p {
@@ -718,6 +740,37 @@ form button:hover {
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
+    .code {
+        background-color: black;
+        color: white;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: none;
+        width: 100vw;
+        margin: auto;
+        padding: 0;
+    }
+    
+    .code .text {
+        margin: auto;
+        align-items: normal;
+        align-content: flex-end;
+        text-align: center;
+        width: 85vw;
+        height: 35vh;
+        
+    }
+    
+    .code img {
+        /* position: absolute; */
+        /* z-index: -1; */
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+    }
+
     .faded {
         display: none;
     }

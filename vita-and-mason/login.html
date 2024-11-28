@@ -14,15 +14,23 @@
     "images/icon.png"
             type="image/x-icon" />
 </head>
-<body>
+<body style="background-color: black; position: fixed">
     <div class="code" id="codeForm">
         <div class="row">
-            <h4>You've been invited!</h4>
-            <p>Vita and Mason want to invite you to their wedding <br>
-            </p>
-            <input name="code" type="text" id="code" placeholder="Please Enter Your Code" required autocomplete="off" >
-            <a id="ParamURL" href="#"><button id="codeButton"><p>Next</p></button></a>
-            <p id="warning" style="color: red; margin-top: 10px; visibility: hidden;">**Please make sure your code is correct.**</p>
+            <div class="col-md-1"></div>
+            <div class="col-md-4 text">
+                <h4>You've been invited!</h4>
+                <p>Vita and Mason want to invite you to their wedding <br>
+                </p>
+                <input name="code" type="text" id="code" placeholder="Please Enter Your Code" required autocomplete="off">
+                <!-- <input type = "text" id = "txtSearch" onkeydown = "if (event.keyCode == 13) document.getElementById('ParamURL').click()" style="display: none;"/> -->
+                <a id="ParamURL" href="#"><button id="codeButton"><p>Next</p></button></a>
+                <p id="warning" style="color: rgb(245, 142, 142); margin-top: 10px; visibility: hidden; font-weight: bold">**Please make sure your code is correct.**</p>
+            </div>
+            <div class="col-md-5">
+                <img src="images/login.jpg">
+            </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
 </body>
