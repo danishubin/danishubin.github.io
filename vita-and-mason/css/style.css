@@ -137,13 +137,18 @@ p {
     padding: 0;
 } */
 
+#main {
+    background-image: url(../images/proposal_lisbon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .cover {
     background: rgba(0, 0, 0, 0.15); /* Dark overlay, adjust the opacity as needed */
 }
 
 
 .cover img {
-    transform: scale(1.0); 
     position: absolute;
     /* width: 100lvw; /* Full width of the viewport */
     height: 100lvh; /* Full height of the viewport */
@@ -162,6 +167,11 @@ p {
 div.center {
     width: 40%;
     margin: auto;
+}
+
+div.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    align-content: center;
 }
 
 .date, .schedule {
