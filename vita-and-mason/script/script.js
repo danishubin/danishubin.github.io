@@ -70,3 +70,7 @@ else {
 //     console.log(urls)
 //     url[0].href = "rvsp.html?code=1";
 // }
+
+ScrollTrigger.config({
+    ignoreMobileResize: true
+});
