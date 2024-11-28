@@ -835,7 +835,7 @@ form button:hover {
         width: 100%; /* Full width image */
         height: 50lvh;
         margin-bottom: 10px;
-        object-position: top;
+        /* object-position: top; */
     }
     .schedule .event .row .col-md-8 {
         flex: 1;
