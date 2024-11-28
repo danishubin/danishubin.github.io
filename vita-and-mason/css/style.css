@@ -255,6 +255,22 @@ div.day {
     -webkit-transform: rotate(135deg);
 }
 
+ .faded{
+    z-index: 2;
+    display: flex;
+    width: 60px;
+}
+
+.fade-left {
+    background: linear-gradient(to right, rgba(251,251,251,1) 0%, rgba(251,251,251, 0) 100%);
+    margin-right: -60px;
+}
+
+.fade-right {
+    background: linear-gradient(to left, rgba(251,251,251,1) 0%, rgba(251,251,251, 0) 100%);
+    margin-left: -60px;
+}
+
 /* .arrow-right {
     margin-left: -100px;
     background: linear-gradient(to left, rgba(251,251,251,1) 0%, rgba(251,251,251, 0) 100%);
@@ -302,9 +318,13 @@ div.day {
     max-width: 100%; /* Ensure it doesn’t exceed the container */
 }
 
+.first-schedule-event {
+    border-left: #b77e1c 1px solid;
+}
+
 
 .schedule .event .row {
-    border: #b77e1c 1px solid;
+    border-right: #b77e1c 1px solid;
     height: 100%;
     overflow: hidden; /* Prevent text overflow */
     box-sizing: border-box; /* Include padding and border in dimensions */
