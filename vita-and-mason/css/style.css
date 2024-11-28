@@ -402,7 +402,6 @@ div.day {
 
 .full-screen-image {
     display: flex;
-    height: 100;
 }
 
 .story .text {
@@ -412,22 +411,8 @@ div.day {
 }
 
 .story .image {
-    align-self: stretch;
     padding: 0;
 }
-
-.story div img {
-
-    object-fit: cover;
-    min-height: 100lvh;
-    object-position: bottom; /* Ensures the top of the image is prioritized */
-}
-
-/* .story .image {
-    background: url("../images/story.jpg") 50% 50%;
-    background-size: cover;
-    height: 100%;
-  } */
 
 .story .image div {
     height: 100%;
@@ -439,6 +424,7 @@ div.day {
     height: auto;
     /* max-height: 100lvh; */
     object-position: top; /* Ensures the top of the image is prioritized */
+    object-fit: cover;
 }
 
 /* tidbits */
