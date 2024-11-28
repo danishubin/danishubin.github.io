@@ -119,7 +119,7 @@ p {
 
 .cover {
     height: 100lvh;
-    width: 100vw;
+    width: 100lvw;
     text-align: center;
 }
 
@@ -144,7 +144,7 @@ p {
 
 .cover img {
     position: absolute;
-    width: 100vw; /* Full width of the viewport */
+    width: 100lvw; /* Full width of the viewport */
     height: 100lvh; /* Full height of the viewport */
     object-fit: cover; /* Ensures proportions are maintained while filling the viewport */
     object-position: bottom; /* Ensures the top of the image is prioritized */
@@ -195,7 +195,7 @@ div.day {
 
 .schedule-arrows {
     min-height: 100lvh;
-    width: 100vw;
+    width: 100lvw;
     align-items: center;
     padding: 10px;
 }
@@ -469,7 +469,7 @@ div.day {
 
 
 .info-background {
-    width: 100vw;
+    width: 100lvw;
     background-color: rgb(221, 239, 255);
     padding: 20px;
 }
@@ -560,7 +560,7 @@ form button:hover {
     align-items: center;
     text-align: center;
     min-height: 100lvh;
-    width: 100vw;
+    width: 100lvw;
     margin: auto;
 }
 
@@ -682,7 +682,7 @@ form button:hover {
 }
 
 #loadingScreen {
-    width: 100vw;
+    width: 100lvw;
     height: 100lvh;
     z-index: 1000;
     background-color: white;
@@ -722,7 +722,7 @@ form button:hover {
 }
 
 .footer {
-    width: 100vw;
+    width: 100lvw;
     background-color: rgb(221, 239, 255);
     padding-bottom: 20px;
 }
@@ -756,7 +756,7 @@ form button:hover {
         align-items: center;
         text-align: center;
         min-height: none;
-        width: 100vw;
+        width: 100lvw;
         margin: auto;
         padding: 0;
     }
@@ -770,7 +770,7 @@ form button:hover {
         align-items: normal;
         align-content: flex-end;
         text-align: center;
-        width: 85vw;
+        width: 85lvw;
         height: 35lvh;
         
     }
@@ -778,7 +778,7 @@ form button:hover {
     .code img {
         /* position: absolute; */
         /* z-index: -1; */
-        width: 100vw;
+        width: 100lvw;
         height: auto;
         object-fit: cover;
         margin-top: -50px;
