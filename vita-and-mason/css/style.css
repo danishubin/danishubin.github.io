@@ -144,7 +144,7 @@ p {
 
 .cover img {
     position: absolute;
-    width: 100lvw; /* Full width of the viewport */
+    /* width: 100lvw; /* Full width of the viewport */
     height: 100lvh; /* Full height of the viewport */
     object-fit: cover; /* Ensures proportions are maintained while filling the viewport */
     object-position: bottom; /* Ensures the top of the image is prioritized */
