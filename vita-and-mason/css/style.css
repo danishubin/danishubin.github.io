@@ -7,10 +7,6 @@ body {
     min-height: 100lvh;
 }
 
-* { 
-    resize: none;
-}
-
 /* Hamburger button */
 .hamburger-btn {
     /* font-size: 24px; */
@@ -823,7 +819,8 @@ form button:hover {
     }
     .schedule .event div div img {
         width: 100%; /* Full width image */
-        height: 50lvh;
+        /* height: 50lvh; */
+        height: auto;
         margin-bottom: 10px;
         /* object-position: top; */
     }
