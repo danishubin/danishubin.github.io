@@ -61,7 +61,7 @@ else {
 
     urlFooter.href = "rvsp.html?code="+code;
 
-    if (code != "vitamason-rd" || code != "vitamason-rd1") {
+    if (code != "vitamason-rd" && code != "vitamason-rd1") {
         rehearsalSchedule.style.display = "none";
     }
 }

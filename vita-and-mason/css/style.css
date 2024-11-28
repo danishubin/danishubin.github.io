@@ -573,12 +573,15 @@ form button:hover {
     text-align: center;
     width: 30%;
     height: 35vh;
+    position: relative;
 }
 
 .code img {
     /* position: absolute; */
     /* z-index: -1; */
     height: 100vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 .code div input {
@@ -606,6 +609,10 @@ form button:hover {
     color: #865b11;
     border-color: #865b11;
     background-color: #e4b35d;
+}
+
+.login-img-container {
+    padding-right: 0px;
 }
 
 .rvsp .submit-button {
@@ -739,7 +746,7 @@ form button:hover {
 
 
 /* Responsive layout for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .code {
         background-color: black;
         color: white;
@@ -751,6 +758,10 @@ form button:hover {
         width: 100vw;
         margin: auto;
         padding: 0;
+    }
+
+    .code-padding {
+        display: none;
     }
     
     .code .text {
@@ -769,8 +780,11 @@ form button:hover {
         width: 100vw;
         height: auto;
         object-fit: cover;
+        margin-top: -50px;
     }
+}
 
+@media (max-width: 768px) {
     .faded {
         display: none;
     }
@@ -835,14 +849,6 @@ form button:hover {
         border-left: none;
         border-right: none;
     }
-
-    
-    .info {
-        border-top: #b77e1c 1px solid;
-        border-bottom: #b77e1c 1px solid;
-        border-left: none;
-        border-right: none; 
-    } 
 
     .info div {
         margin: auto;
