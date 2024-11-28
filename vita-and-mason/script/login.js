@@ -23,13 +23,14 @@ var input = document.getElementById("code");
 input.addEventListener("keypress", function(event) {
   // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
-    if ((code.value).toLowerCase() == "vitamason") { // No Rehearsal No +1
+    var codeToCheck = code.value.toLowerCase().trim();
+    if (codeToCheck == "vitamason") { // No Rehearsal No +1
       window.location.href = "index.html?code=vitamason";  // Replace with your custom page URL
-    } else if ((code.value).toLowerCase() == "vitamason-rd") { // Rehearsal No +1
+    } else if (codeToCheck == "vitamason-rd") { // Rehearsal No +1
       window.location.href = "index.html?code=vitamason-rd";  // Replace with your custom page URL
-    } else if ((code.value).toLowerCase()== "vitamason-1") { // No Rehearsal + 1
+    } else if (codeToCheck == "vitamason-1") { // No Rehearsal + 1
       window.location.href = "index.html?code=vitamason-1";  // Replace with your custom page URL
-    } else if ((code.value).toLowerCase()== "vitamason-rd1") { // Rehearsal + 1
+    } else if (codeToCheck == "vitamason-rd1") { // Rehearsal + 1
       window.location.href = "index.html?code=vitamason-rd1";  // Replace with your custom page URL
     } else {
       warning.style.visibility = "visible";
