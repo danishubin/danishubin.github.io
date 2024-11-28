@@ -143,6 +143,7 @@ p {
 
 
 .cover img {
+    transform: scale(1.0); 
     position: absolute;
     /* width: 100lvw; /* Full width of the viewport */
     height: 100lvh; /* Full height of the viewport */
