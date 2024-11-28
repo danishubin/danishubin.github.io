@@ -41,12 +41,14 @@ sideMenu.addEventListener('click', (e) => {
 let code = (document.URL.split('?'))
 urlMenu = document.getElementById("ParamURLMenu");
 urlCover = document.getElementById("ParamURLCover");
+urlFooter = document.getElementById("ParamURLFooter")
 rehearsalSchedule = document.getElementById("rehearsalSchedule");
 
 
 if (code == document.URL) {
     urlMenu.href = "rvsp.html?code="+1;
     urlCover.href = "rvsp.html?code="+1;
+    urlFooter.href = "rvsp.html?code="+1;
     rehearsalSchedule.style.display = "none";
 }
 
@@ -56,6 +58,8 @@ else {
     urlMenu.href = "rvsp.html?code="+code;
 
     urlCover.href = "rvsp.html?code="+code;
+
+    urlFooter.href = "rvsp.html?code="+code;
 
     if (code != 2) {
         rehearsalSchedule.style.display = "none";
