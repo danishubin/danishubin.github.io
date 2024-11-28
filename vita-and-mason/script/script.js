@@ -6,7 +6,7 @@ const closeBtn = document.getElementById('close-btn');
 // Open the menu
 hamburgerBtn.addEventListener('click', (e) => {
     sideMenu.classList.add('active');
-    hamburgerBtn.style.zIndex = "-1";
+    hamburgerBtn.style.zIndex = "-100";
 
     // Stop propagation to prevent triggering the document click listener
     e.stopPropagation();
@@ -15,14 +15,14 @@ hamburgerBtn.addEventListener('click', (e) => {
 // Close the menu via the close button
 closeBtn.addEventListener('click', () => {
     sideMenu.classList.remove('active');
-    hamburgerBtn.style.zIndex = "1";
+    hamburgerBtn.style.zIndex = "100";
 });
 
 // Close the menu if clicking outside of it
 document.addEventListener('click', (e) => {
     if (!sideMenu.contains(e.target) && e.target !== hamburgerBtn) {
         sideMenu.classList.remove('active');
-        hamburgerBtn.style.zIndex = "1";
+        hamburgerBtn.style.zIndex = "100";
     }
 });
 
@@ -30,7 +30,7 @@ document.addEventListener('click', (e) => {
 const li = document.getElementById("selectionClose");
 li.addEventListener('click', () => {
     sideMenu.classList.remove('active');
-    hamburgerBtn.style.zIndex = "1";
+    hamburgerBtn.style.zIndex = "100";
 });
 
 // Prevent clicks inside the menu from propagating to the document
