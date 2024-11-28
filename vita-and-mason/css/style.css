@@ -193,8 +193,9 @@ div.day {
 /* Schedule */
 
 .schedule-arrows {
+    min-height: 100vh;
     width: 100vw;
-    align-items: stretch;
+    align-items: center;
     padding: 10px;
 }
 
@@ -256,9 +257,10 @@ div.day {
 }
 
  .faded{
-    z-index: 2;
+    align-self: stretch;
     display: flex;
     width: 60px;
+    z-index: 2;
 }
 
 .fade-left {
@@ -361,6 +363,12 @@ div.day {
 
 /* FAQ */
 
+#faq-title { 
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
 .accordion, .accordion-button, .accordion-body {
     background-color: rgb(221, 239, 255);
     text-align: left;
@@ -368,7 +376,7 @@ div.day {
 
 .accordion {
     margin-top: 10px;
-    padding: 10px;
+    padding: 30px 10px 30px 10px;
 }
 
 .accordion-body {
@@ -456,8 +464,6 @@ div.day {
     color: black;
     width: 80%;
     margin: auto;
-    border: #b77e1c 1px solid;
-
 }
 
 
@@ -480,6 +486,16 @@ div.day {
 
 .info h4 {
     margin-bottom: 30px;
+}
+
+#hotels {
+    border-bottom: #b77e1c 1px solid;
+    border-top: #b77e1c 1px solid;
+
+}
+
+#uber {
+    margin: 0px;
 }
 
 /* RVSP */
@@ -660,6 +676,10 @@ form button:hover {
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
+    .faded {
+        display: none;
+    }
+
     .story .text {
         padding: 20px;
         width: 90%;
@@ -668,6 +688,10 @@ form button:hover {
 
     .arrows {
         z-index: -1;
+    }
+
+    .schedule-arrow {
+        min-height: none;
     }
 
     .schedule-arrows .col-md-1 {
