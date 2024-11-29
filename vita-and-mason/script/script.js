@@ -70,3 +70,21 @@ else {
 //     console.log(urls)
 //     url[0].href = "rvsp.html?code=1";
 // }
+
+window.addEventListener('load', (event) => {
+    const overlay = document.getElementById("overlay");
+    console.log(window.innerWidth);
+    // iFrame.contentWindow.document.body.style.margin = "0 0 0 0";
+    // const windowHeight =  window.innerHeight;
+
+    // // const iframeHeight = iFrame.contentWindow.document.body.scrollHeight + 'px';
+    // overlay.style.height = windowHeight + "px";
+    if (window.innerWidth < 750) {
+        const windowHeight =  window.innerHeight;
+
+        // const iframeHeight = iFrame.contentWindow.document.body.scrollHeight + 'px';
+        overlay.style.height = windowHeight + "px";
+        // document.getElementsByClassName("mainContainer")[0].style.height = iframeHeight;
+        console.log(windowHeight);
+    }
+});

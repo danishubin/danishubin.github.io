@@ -166,7 +166,7 @@ div.center {
 div.overlay {
     background: rgba(0, 0, 0, 0.3);
     align-content: center;
-    height: 100lvh;
+    /* height: 100lvh; */
 }
 
 .date, .schedule {
@@ -736,8 +736,25 @@ form button:hover {
 }
 
 
+@media (min-width: 750px) {
+    div.overlay {
+        /* background: rgba(0, 0, 0, 0.3);
+        align-content: center; */
+        height: 100lvh;
+    }
+}
 /* Responsive layout for smaller screens */
 @media (max-width: 1200px) {
+
+    
+    .cover img {
+        position: absolute;
+        /* width: 100lvw; /* Full width of the viewport */
+        height: 100%; /* Full height of the viewport */
+        object-fit: cover; /* Ensures proportions are maintained while filling the viewport */
+        object-position: bottom; /* Ensures the top of the image is prioritized */
+    }
+
     .code {
         background-color: black;
         color: white;
