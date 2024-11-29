@@ -73,12 +73,12 @@ else {
 
 window.addEventListener('load', (event) => {
     const overlay = document.getElementById("overlay");
-    // if (window.innerWidth < 750) {
+    if (window.innerWidth < 750) {
         const windowHeight =  window.innerHeight;
 
         overlay.style.height = windowHeight + "px";
         overlay.style.width = window.innerWidth + "px";
-    // }
+    }
 });
 
 // window.addEventListener('resize', (event) => {
