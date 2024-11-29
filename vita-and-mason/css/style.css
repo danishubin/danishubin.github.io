@@ -719,21 +719,16 @@ form button:hover {
 }
 
 .footer a button {
-    width: 50%;
-    background-color: rgb(207, 226, 255);
-    color: black;
+    color: #b77e1c;
     border: none;
     padding: 15px;
-    border: rgb(207, 226, 255) 1px solid;
+    border: #b77e1c 1px solid;
 
 }
 
 .footer a button:hover {
-    /* background-color: white;
-    color: black; */
-    background-color: rgb(207, 226, 255);
-    color: black;
-    border: rgb(93, 145, 224) 1px solid;
+    background-color: #b77e1c;
+    color: white;
 }
 
 
