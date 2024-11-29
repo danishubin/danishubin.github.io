@@ -135,6 +135,7 @@ p {
     background-image: url(../images/proposal_lisbon.jpg);
     background-size: cover;
     background-position: bottom;
+    /* width: 100vw; */
 }
 
 .cover {
