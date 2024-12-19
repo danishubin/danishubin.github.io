@@ -46,9 +46,9 @@ let param = (document.URL.split('?')[1]).split("=")[1];
 
 if (param == "vitamason-rd") {
   rehearsal.style.display = "flex";
-} else if (param == "vitamason-1") {
+} else if (param == "vitamason-g") {
   guest.style.display = "flex";
-} else if (param == "vitamason-rd1") {
+} else if (param == "vitamason-rdg") {
   guest.style.display = "flex";
   rehearsal.style.display = "flex";
 }
