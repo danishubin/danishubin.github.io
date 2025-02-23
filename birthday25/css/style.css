@@ -100,7 +100,7 @@ body {
 
 .intro button {
     position: absolute;
-    top: 80%;
+    top: 40%;
     left: 45%;
     width: 10%;
     height: 10%;
@@ -114,7 +114,7 @@ body {
 .birthday img {
     position: absolute;
     height: 100vh;
-    left: 30%;
+    left: 25%;
 }
 
 .birthday h1 {
@@ -122,4 +122,9 @@ body {
     left: 35%;
     top: 80%;
     color: white;
+}
+
+.six img {
+    width: 100vw;
+    height: 100vh;
 }

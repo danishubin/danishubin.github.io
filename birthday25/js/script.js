@@ -1,4 +1,7 @@
 birthday = document.getElementsByClassName("birthday")[0];
+six = document.getElementsByClassName("six")[0];
+calendar = document.getElementById("calendar");
+calendar.onmousedown = checkCalendarClick;
 
 var source = document.getElementById('audioSource');
 
@@ -33,19 +36,18 @@ intro = document.getElementsByClassName("intro")[0];
 video = document.getElementById("video");
 start = document.getElementById("playAudio");
 start.addEventListener("click", function() {
-    start.style.display = "none";
-    video.play().catch(error => console.log("Autoplay prevented:", error));
-    setTimeout(() => {
-        one.style.display = "initial";
-        intro.style.display = "none";
-        audio = document.getElementById("songs");
-        audio.muted = false; // Unmute the audio
-        audio.play().then(() => {
-            console.log("Audio is playing");
-        }).catch(error => {
-            console.log("Error playing audio:", error);
-        });
-    }, 32000); // Wait for 3 seconds (3000 milliseconds)
+    one.style.display = "initial";
+    intro.style.display = "none";
+    audio = document.getElementById("songs");
+    audio.muted = false; // Unmute the audio
+    audio.play().then(() => {
+        console.log("Audio is playing");
+    }).catch(error => {
+        console.log("Error playing audio:", error);
+    });
+    // video.play().catch(error => console.log("Autoplay prevented:", error));
+    // setTimeout(() => {
+    // }, 32000); // Wait for 3 seconds (3000 milliseconds)
 
 
 });
@@ -67,6 +69,28 @@ function checkMomClick(e) {
         four.style.display = "none";
         five.style.display = "initial";
         source.src = "songs/HTTYD.mp3";
+
+        audio.load(); //call this to just preload the audio without playing
+        audio.play(); //call this to play the song right away
+    }
+}
+
+
+function checkCalendarClick(e) {
+    const rect = calendar.getBoundingClientRect(); 
+
+    const clickX = e.clientX - rect.left;
+  
+    const clickY = e.clientY - rect.top;
+  
+    const left = rect.width;
+  
+    const bottom = rect.height;
+  
+    if (clickX > left - 250 && clickY > bottom - 250) {
+        six.style.display = "none";
+        birthday.style.display = "initial";
+        source.src = "songs/ghibli.mp3";
 
         audio.load(); //call this to just preload the audio without playing
         audio.play(); //call this to play the song right away
@@ -282,12 +306,13 @@ letterTen.addEventListener("input", function() {
         letterFive.value.localeCompare("I") == 0 && letterSix.value.localeCompare("S") == 0
         && letterSeven.value.localeCompare("B") == 0 && letterEight.value.localeCompare("E") == 0 && letterNine.value.localeCompare("R") == 0 && letterTen.value.localeCompare("K") == 0) {
             five.style.display = "none";
-            source.src = "songs/ghibli.mp3";
+            six.style.display = "initial";
+
+            source.src = "songs/anastasia.mp3";
 
             audio.load(); //call this to just preload the audio without playing
             audio.play(); //call this to play the song right away
 
-            birthday.style.display = "initial";
         }
     }
 });
