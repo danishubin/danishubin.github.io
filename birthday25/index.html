@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="songs" autoplay="true" muted="muted">
+        <source id="audioSource" src="songs/B&B.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+    <div class="intro">
+        <video id="video" src="images/disney_intro.mp4"></video>
+        <button id="playAudio">Start</button>
+    </div>
+
+    <div class="one" style="display: none;">
+        <img id="stem" src="images/one/rose_stem.png" alt="rose stem">
+        <img id="bud" src="images/one/rose_top.png" alt="rose top">
+    </div>
+
+    <div class="two" style="display: none;">
+        <div id="river-one"></div>
+        <div id="river-two"></div>
+    </div>
+
+    <div class="three" style="display: none;">
+        <img id="cheese" src="images/three/cheese.png">
+        <img id="grapes" src="images/three/grapes.png">
+    </div>
+
+    <div class="four" style="display: none;">
+        <img id="mom" src="images/four/mom.jpg" alt="mom" >
+    </div>
+
+    <div class="five" style="display: none;">
+        <img src="images/five/berk.jpg" alt="berk">
+        <div class="code">
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterOne" maxlength="1" />
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterTwo" maxlength="1" />
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterThree" maxlength="1" />
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterFour" maxlength="1" />
+            <div style="height: 20px;"></div>
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterFive" maxlength="1" />
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterSix" maxlength="1" />
+            <div style="height: 20px;"></div>
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterSeven" maxlength="1" />
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterEight" maxlength="1" />
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterNine" maxlength="1" />
+            <input oninput="this.value = this.value.toUpperCase()" type="text" class="form-control letterTen" maxlength="1" />
+        </div>
+    </div>
+
+    <div class="birthday" style="display: none;">
+        <img src="images/birthday.png" alt="">
+        <h1>Happy (Late) Birthday</h1>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>

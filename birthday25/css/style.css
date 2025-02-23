@@ -1,0 +1,125 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.one {
+    height: 100vh;
+    width: 100vw;
+}
+
+.one #stem {
+    position: absolute;
+    height: 80vh;
+    left: 40%;
+    bottom: 0%;
+}
+
+.one #bud {
+    position: absolute;
+    height: 30vh;
+    bottom: 0%;
+    left: 0%;
+}
+
+.two #river-one {
+    position: absolute;
+    height: 0vh;
+    width: 53vw;
+    left: -5%;
+    top: 50%;
+    border: 30px solid black;
+    /* border-radius = height + border */
+    border-radius: 130px 130px 0 0;
+    border-bottom: transparent;
+    border-color: lightskyblue;
+}
+
+.two #river-two {
+    position: absolute;
+    height: 0vh;
+    width: 50vw;
+    left: 50vw;
+    top: 50%;
+    border: 30px solid black;
+    /* border-radius = height + border */
+    border-radius: 0 0 130px 130px;
+    border-top: transparent;
+    border-color: lightskyblue;
+}
+
+.three #cheese {
+    height: 20vh;
+    position: absolute;
+}
+
+.three #grapes {
+    height: 20vh;
+    position: absolute;
+    left: 80vw;
+    top: 80vh;
+}
+
+
+.four {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.four img {
+    height: 100vh;
+    left: 30vw;
+    position: absolute;
+}
+
+.five img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.code {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+
+.code input {
+    width: 40px;
+    height: 40px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.code .space {
+    width: 100px;
+    height: 40px;
+}
+
+.intro button {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    width: 10%;
+    height: 10%;
+}
+
+.intro video {
+    width: 100vw;
+    height: 100vh;
+}
+
+.birthday img {
+    position: absolute;
+    height: 100vh;
+    left: 30%;
+}
+
+.birthday h1 {
+    position: absolute;
+    left: 35%;
+    top: 80%;
+    color: white;
+}
